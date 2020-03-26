@@ -28,7 +28,9 @@
 		"watch": "chokidar 'src/**/*.(js|jsx|ts|tsx)' -c 'npm run build'",
 		"clean": "rm -rf build/",
 		"lint": "eslint '**/*.ts' && tsc -p . --noEmit",
-		"lint:fix": "eslint --fix '**/*.ts'"
+		"lint:fix": "eslint --fix '**/*.ts'",
+		"test": "mocha -r ts-node/register/transpile-only --exit 'tests/**/*Tests*'",
+		"release": "semantic-release"
 	},
 	"dependencies": {},
 	"devDependencies": {
@@ -39,11 +41,17 @@
 		"@semantic-release/changelog": "^5.0.0",
 		"@semantic-release/git": "^9.0.0",
 		"@sprucelabs/semantic-release": "^2.0.8",
+		"@types/chai": "^4.2.3",
+		"@types/faker": "^4.1.11",
+		"@types/mocha": "^5.2.7",
+		"chai": "^4.2.0",
 		"chokidar-cli": "^2.1.0",
 		"concurrently": "^5.0.2",
 		"conventional-changelog-sprucelabs": "^1.1.0",
 		"eslint": "^5",
 		"eslint-config-spruce": "^9.0.0",
+		"faker": "^4.1.0",
+		"mocha": "^5.2.0",
 		"prettier": "^1.19",
 		"rollup": "^1.27.14",
 		"rollup-plugin-node-builtins": "^2.1.2",
