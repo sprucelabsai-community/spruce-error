@@ -20,4 +20,9 @@ export default class SpruceError<
 			this.stack = options.lastError.stack
 		}
 	}
+
+	/** get a nice, readable version of the error. subclasses extend this */
+	public friendlyMessage(): string {
+		return this.message
+	}
 }
