@@ -1,10 +1,4 @@
 import { HttpStatusCode } from './lib/httpStatusCodes'
-import {  ISpruceErrorContextUnknown} from "./errors/unknownError";
-import { ISpruceErrorContextMissingParamaters } from './errors/missingParameters';
-import { ISpruceErrorContextInvalidParameters } from './errors/invalidParameters';
-
-export * from './errors/unknownError'
-export * from './errors/missingParameters'
 
 // the basic context for all errors
 export interface ISpruceErrorContext {}
@@ -25,8 +19,7 @@ export interface ISpruceErrorOptions<M extends ISpruceErrorMap = SpruceErrorMap,
 	/** The HTTP status code that most closely corresponds to this error: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status */
 	httpStatusCode?: HttpStatusCode
 	/** the context with this error  */
-    context: M[T]
-   
+    context: M[T] 
 }
 
 /** mapping of codes to options */
@@ -35,7 +28,17 @@ export interface ISpruceErrorMap {
 }
 
 export type SpruceErrorMap = {
-    [SpruceErrorCode.UnknownError]: ISpruceErrorContextUnknown
-    [SpruceErrorCode.MissingParameters]: ISpruceErrorContextMissingParamaters
-    [SpruceErrorCode.InvalidParameters]: ISpruceErrorContextInvalidParameters
+    /** we're not sure what happened */
+    [SpruceErrorCode.UnknownError]:  {}
+
+    /** missing params */
+    [SpruceErrorCode.MissingParameters]: {
+        missingParamaters: string[]
+    }    
+
+    /** invalid params */
+    [SpruceErrorCode.InvalidParameters]: {
+        missingParamaters: string[]
+    }
+
 }

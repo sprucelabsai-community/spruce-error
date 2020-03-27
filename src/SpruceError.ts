@@ -3,7 +3,7 @@ import { ISpruceErrorOptions, SpruceErrorMap, ISpruceErrorMap } from "./types";
 export default class SpruceError<
 	M extends ISpruceErrorMap = SpruceErrorMap,
 	C extends keyof M = keyof M,
-	T extends ISpruceErrorOptions<M, C> = ISpruceErrorOptions<M,C>
+	T extends ISpruceErrorOptions<M, C> = ISpruceErrorOptions<M, C>
 	> extends Error {
 
 	public readonly code: C;
