@@ -5,12 +5,19 @@ export default class SpruceError<
 	C extends keyof M = keyof M,
 	T extends ISpruceErrorOptions<M, C> = ISpruceErrorOptions<M, C>
 > extends Error {
-	public readonly code: C
+	public code: C
 	public options?: T
+	public lastError?: Error
 
 	public constructor(code: C, options?: T) {
 		super(code as string)
+
 		this.code = code
 		this.options = options
+
+		// preserve the stac
+		if (options?.lastError) {
+			this.stack = options.lastError.stack
+		}
 	}
 }
