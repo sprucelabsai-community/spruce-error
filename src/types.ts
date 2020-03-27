@@ -8,9 +8,9 @@ export enum SpruceErrorCode {
 }
 
 /** parent interface for all error options */
-export interface ISpruceErrorOptions {
+export interface ISpruceErrorOptions<C extends {}> {
 	/** the code that should match your error constant */
-	code: SpruceErrorCode
+	code: C
 	/** an easy to read version of the error */
 	friendlyReason?: string
 	/** tracking the error we caught previously if one exists  */
@@ -26,18 +26,21 @@ export type SpruceErrorOptions =
 	| ISpruceErrorInvalidParameters
 
 /** we aren't sure what happened */
-export interface ISpruceErrorUnknownError extends ISpruceErrorOptions {
+export interface ISpruceErrorUnknownError
+	extends ISpruceErrorOptions<SpruceErrorCode> {
 	code: SpruceErrorCode.UnknownError
 }
 
 /** something is missing */
-export interface ISpruceErrorMissingParameters extends ISpruceErrorOptions {
+export interface ISpruceErrorMissingParameters
+	extends ISpruceErrorOptions<SpruceErrorCode> {
 	code: SpruceErrorCode.MissingParameters
 	missingParamaters: string[]
 }
 
 /** some parameter is bad */
-export interface ISpruceErrorInvalidParameters extends ISpruceErrorOptions {
+export interface ISpruceErrorInvalidParameters
+	extends ISpruceErrorOptions<SpruceErrorCode> {
 	code: SpruceErrorCode.InvalidParameters
 	missingParamaters: string[]
 }

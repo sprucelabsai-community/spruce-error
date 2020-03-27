@@ -1,7 +1,7 @@
-import { SpruceErrorOptions } from './types'
+import { SpruceErrorOptions, ISpruceErrorOptions } from './types'
 
 export default class SpruceError<
-	T extends SpruceErrorOptions = SpruceErrorOptions
+	T extends ISpruceErrorOptions = SpruceErrorOptions
 > extends Error {
 	public options?: T
 	public lastError?: Error
