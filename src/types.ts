@@ -27,6 +27,7 @@ export interface ISpruceErrorMap {
     [code: string]: ISpruceErrorContext
 }
 
+/** a map of all errors to their context */
 export type SpruceErrorMap = {
     /** we're not sure what happened */
     [SpruceErrorCode.UnknownError]:  {}
