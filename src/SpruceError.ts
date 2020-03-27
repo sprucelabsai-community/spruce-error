@@ -1,21 +1,19 @@
-import { ISpruceErrorOptions, SpruceErrorMap, ISpruceErrorMap } from './types'
+import { SpruceErrorOptions } from './types'
 
 export default class SpruceError<
-	M extends ISpruceErrorMap = SpruceErrorMap,
-	C extends keyof M = keyof M,
-	T extends ISpruceErrorOptions<M, C> = ISpruceErrorOptions<M, C>
+	T extends SpruceErrorOptions = SpruceErrorOptions
 > extends Error {
-	public code: C
 	public options?: T
 	public lastError?: Error
 
-	public constructor(code: C & string, options?: T) {
+	public constructor(options: T) {
+		const { code } = options
+
 		super(code)
 
-		this.code = code
 		this.options = options
 
-		// preserve the stac
+		// preserve the stack
 		if (options?.lastError) {
 			this.stack = options.lastError.stack
 		}

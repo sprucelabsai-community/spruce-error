@@ -9,7 +9,10 @@ class ErrorTests extends Base {
 	}
 
 	public async createError() {
-		const spruceError = new SpruceError(SpruceErrorCode.InvalidParameters)
+		const spruceError = new SpruceError({
+			code: SpruceErrorCode.InvalidParameters,
+			missingParamaters: ['test']
+		})
 
 		assert.isOk(spruceError)
 	}
