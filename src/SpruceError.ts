@@ -9,8 +9,8 @@ export default class SpruceError<
 	public options?: T
 	public lastError?: Error
 
-	public constructor(code: C, options?: T) {
-		super(code as string)
+	public constructor(code: C & string, options?: T) {
+		super(code)
 
 		this.code = code
 		this.options = options
