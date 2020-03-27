@@ -21,6 +21,6 @@ export default class SpruceError<
 
 	/** get a nice, readable version of the error. subclasses extend this */
 	public friendlyMessage(): string {
-		return this.message
+		return this.options?.friendlyMessage || this.message
 	}
 }

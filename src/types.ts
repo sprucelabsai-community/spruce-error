@@ -12,7 +12,7 @@ export interface ISpruceErrorOptions<C extends {}> {
 	/** the code that should match your error constant */
 	code: C
 	/** an easy to read version of the error */
-	friendlyReason?: string
+	friendlyMessage?: string
 	/** tracking the error we caught previously if one exists  */
 	lastError?: Error
 	/** The HTTP status code that most closely corresponds to this error: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status */
