@@ -3,8 +3,11 @@ import { SpruceErrorOptions, ISpruceErrorOptions } from './types'
 export default class SpruceError<
 	T extends ISpruceErrorOptions = SpruceErrorOptions
 > extends Error {
-	public options?: T
+	public options: T
 	public lastError?: Error
+	public get code(): T['code'] {
+		return this.options.code
+	}
 
 	public constructor(options: T) {
 		const { code } = options
@@ -21,6 +24,6 @@ export default class SpruceError<
 
 	/** get a nice, readable version of the error. subclasses extend this */
 	public friendlyMessage(): string {
-		return this.options?.friendlyMessage || this.message
+		return this.options.friendlyMessage || this.message
 	}
 }
