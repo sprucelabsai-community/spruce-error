@@ -8,7 +8,7 @@ export enum SpruceErrorCode {
 }
 
 /** parent interface for all error options */
-export interface ISpruceErrorOptions<C extends {}> {
+export interface ISpruceErrorOptions<C extends any = any> {
 	/** the code that should match your error constant */
 	code: C
 	/** an easy to read version of the error */
