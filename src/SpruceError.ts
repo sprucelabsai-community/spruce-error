@@ -5,15 +5,10 @@ export default class SpruceError<
 > extends Error {
 	public options: T
 	public lastError?: Error
-	public get code(): T['code'] {
-		return this.options.code
-	}
-
 	public constructor(options: T) {
 		const { code } = options
 
 		super(code)
-
 		this.options = options
 
 		// preserve the stack
