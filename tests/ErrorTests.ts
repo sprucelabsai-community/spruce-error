@@ -8,7 +8,7 @@ class ErrorTests extends Base {
 	}
 
 	public async createError() {
-		const spruceError = new SpruceError
+		const spruceError = new SpruceError()
 		assert.isOk(spruceError)
 	}
 }
