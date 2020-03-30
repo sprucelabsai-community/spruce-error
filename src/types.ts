@@ -1,46 +1,47 @@
 import { HttpStatusCode } from './lib/httpStatusCodes'
 
-// all error codes get dropped into this enum
+// All error codes get dropped into this enum
 export enum SpruceErrorCode {
 	UnknownError = 'UNKNOWN_ERROR',
 	MissingParameters = 'MISSING_PARAMETERS',
-	InvalidParameters = 'INVALID_PARAMATERS'
+	InvalidParameters = 'INVALID_PARAMETERS'
 }
 
-/** parent interface for all error options */
+// TODO find why `any` is required in Options generic
+/** Parent interface for all error options */
 export interface ISpruceErrorOptions<C extends any = any> {
-	/** the code that should match your error constant */
+	/** The code that should match your error constant */
 	code: C
-	/** an easy to read version of the error */
+	/** An easy to read version of the error */
 	friendlyMessage?: string
-	/** tracking the error we caught previously if one exists  */
-	lastError?: Error
+	/** Tracking the error we caught previously if one exists  */
+	originalError?: Error
 	/** The HTTP status code that most closely corresponds to this error: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status */
 	httpStatusCode?: HttpStatusCode
 }
 
-/** error options */
+/** Error options */
 export type SpruceErrorOptions =
 	| ISpruceErrorUnknownError
 	| ISpruceErrorMissingParameters
 	| ISpruceErrorInvalidParameters
 
-/** we aren't sure what happened */
 export interface ISpruceErrorUnknownError
 	extends ISpruceErrorOptions<SpruceErrorCode> {
+	/** * We aren't sure what happened */
 	code: SpruceErrorCode.UnknownError
 }
 
-/** something is missing */
 export interface ISpruceErrorMissingParameters
 	extends ISpruceErrorOptions<SpruceErrorCode> {
+	/** * Something is missing */
 	code: SpruceErrorCode.MissingParameters
-	missingParamaters: string[]
+	parameters: string[]
 }
 
-/** some parameter is bad */
 export interface ISpruceErrorInvalidParameters
 	extends ISpruceErrorOptions<SpruceErrorCode> {
+	/** * Some parameter is bad */
 	code: SpruceErrorCode.InvalidParameters
-	missingParamaters: string[]
+	parameters: string[]
 }

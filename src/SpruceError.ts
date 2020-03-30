@@ -1,23 +1,33 @@
-import { SpruceErrorOptions, ISpruceErrorOptions } from './types'
+import {
+	SpruceErrorOptions,
+	ISpruceErrorOptions,
+	SpruceErrorCode
+} from './types'
 
 export default class SpruceError<
 	T extends ISpruceErrorOptions = SpruceErrorOptions
 > extends Error {
 	public options: T
-	public lastError?: Error
+	public originalError?: Error
 	public constructor(options: T) {
 		const { code } = options
 
 		super(code)
 		this.options = options
 
-		// preserve the stack
-		if (options?.lastError) {
-			this.stack = options.lastError.stack
+		switch (code) {
+			case SpruceErrorCode.InvalidParameters:
+				break
+		}
+
+		// Preserve the stack
+		if (options.originalError) {
+			this.stack = options.originalError.stack
+			this.originalError = options.originalError
 		}
 	}
 
-	/** get a nice, readable version of the error. subclasses extend this */
+	/** Get a nice, readable version of the error. subclasses extend this */
 	public friendlyMessage(): string {
 		return this.options.friendlyMessage || this.message
 	}

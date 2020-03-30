@@ -29,7 +29,7 @@
     "clean": "rm -rf build/",
     "lint": "eslint '**/*.ts' && tsc -p . --noEmit",
     "lint:fix": "eslint --fix '**/*.ts'",
-    "test": "mocha -r ts-node/register/transpile-only --exit 'tests/**/*Tests*'",
+    "test": "mocha -r ts-node/register/transpile-only --exit '**/*.test.ts'",
     "release": "semantic-release"
   },
   "dependencies": {},
