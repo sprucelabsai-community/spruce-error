@@ -1,9 +1,9 @@
 import { assert } from 'chai'
-import Base from './Base'
-import SpruceError from '../src/SpruceError'
-import { SpruceErrorCode } from '../src/types'
+import SpruceError from './SpruceError'
+import { SpruceErrorCode } from './types'
+import Base from '../tests/Base'
 
-class ErrorTests extends Base {
+class SpruceErrorTests extends Base {
 	public setup() {
 		it('Can create a SpruceError', () => this.createError())
 	}
@@ -11,13 +11,13 @@ class ErrorTests extends Base {
 	public async createError() {
 		const spruceError = new SpruceError({
 			code: SpruceErrorCode.InvalidParameters,
-			missingParameters: ['test']
+			parameters: ['test']
 		})
 
 		assert.isOk(spruceError)
 	}
 }
 
-describe('ErrorTests', function Tests() {
-	new ErrorTests()
+describe('SpruceErrorTests', function Tests() {
+	new SpruceErrorTests()
 })
