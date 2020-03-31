@@ -1,7 +1,9 @@
 import { assert } from 'chai'
-import SpruceError from './SpruceError'
+import AbstractSpruceError from './AbstractSpruceError'
 import { SpruceErrorCode } from './types'
 import Abstract from '../tests/Abstract'
+
+class SpruceError extends AbstractSpruceError {}
 
 class SpruceErrorTests extends Abstract {
 	public setup() {

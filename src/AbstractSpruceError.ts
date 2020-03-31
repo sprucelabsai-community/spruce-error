@@ -4,7 +4,7 @@ import {
 	SpruceErrorCode
 } from './types'
 
-export default class SpruceError<
+export default abstract class AbstractSpruceError<
 	T extends ISpruceErrorOptions = SpruceErrorOptions
 > extends Error {
 	public options: T
