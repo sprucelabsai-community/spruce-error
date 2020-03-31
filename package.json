@@ -6,7 +6,7 @@
 	"files": [
 		"build"
 	],
-	"version": "1.0.1",
+	"version": "1.0.3",
 	"main": "./build/index.js",
 	"types": "./build/index.d.ts",
 	"description": "Error handling in the Spruce Experience Platform",
@@ -48,7 +48,7 @@
 		"chokidar-cli": "^2.1.0",
 		"concurrently": "^5.0.2",
 		"eslint": "^5",
-		"eslint-config-spruce": "^10.0.0",
+		"eslint-config-spruce": "^10.1.0",
 		"faker": "^4.1.0",
 		"mocha": "^5.2.0",
 		"prettier": "^1.19",
