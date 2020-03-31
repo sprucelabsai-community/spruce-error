@@ -32,7 +32,9 @@
 		"test": "mocha -r ts-node/register/transpile-only --exit '**/*.test.ts*'",
 		"release": "semantic-release"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"@sprucelabs/schema": "^1.0.0-dev.1"
+	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^11.0.0",
 		"@rollup/plugin-json": "^4.0.1",
