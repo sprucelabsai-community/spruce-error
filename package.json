@@ -16,9 +16,9 @@
     "sprucebot",
     "sprucelabs"
   ],
-  "homepage": "https://github.com/sprucelabsai/workspace.sprucebot-skills-kit",
+  "homepage": "https://github.com/sprucelabsai/spruce-error",
   "bugs": {
-    "url": "https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/issues"
+    "url": "https://github.com/sprucelabsai/spruce-error/issues"
   },
   "scripts": {
     "build": "npm run clean && concurrently \"npm run build:node\" \"npm run build:umd\"",
