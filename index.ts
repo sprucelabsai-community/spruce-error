@@ -1,5 +1,5 @@
 export * from './src/BaseSpruceError'
-import AbstractSpruceError from './src/BaseSpruceError'
-export default AbstractSpruceError
+import BaseSpruceError from './src/BaseSpruceError'
+export default BaseSpruceError
 
 export * from './src/types'
