@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 // The base test model that all others will extend
-export default class Abstract {
+export default class Base {
 	public constructor() {
 		before(() => this.before())
 		after(() => this.after())
