@@ -1,8 +1,4 @@
-import {
-	SpruceErrorOptions,
-	ISpruceErrorOptions,
-	SpruceErrorCode
-} from './types'
+import { SpruceErrorOptions, ISpruceErrorOptions } from './types'
 
 export default class BaseSpruceError<
 	T extends ISpruceErrorOptions = SpruceErrorOptions
@@ -15,16 +11,13 @@ export default class BaseSpruceError<
 		super(code)
 		this.options = options
 
-		switch (code) {
-			case SpruceErrorCode.InvalidParameters:
-				break
-		}
-
 		// Preserve the stack
 		if (options.originalError) {
 			this.stack = options.originalError.stack
 			this.originalError = options.originalError
 		}
+
+		this.message = this.friendlyMessage()
 	}
 
 	/** Get a nice, readable version of the error. subclasses extend this */
