@@ -56,5 +56,8 @@
     "ts-node": "^8.8.1",
     "typescript": "^3.8"
   },
-  "peerDependencies": {}
+  "peerDependencies": {},
+  "dependencies": {
+    "stack-utils": "^2.0.1"
+  }
 }
