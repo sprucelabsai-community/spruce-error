@@ -6,6 +6,8 @@ const stack = new StackUtils({
 	internals: StackUtils.nodeInternals()
 })
 
+Error.stackTraceLimit = Infinity
+
 export default class BaseSpruceError<
 	T extends ISpruceErrorOptions = SpruceErrorOptions
 > extends Error {
