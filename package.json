@@ -57,7 +57,5 @@
     "typescript": "^3.8"
   },
   "peerDependencies": {},
-  "dependencies": {
-    "stack-utils": "^2.0.1"
-  }
+  "dependencies": {}
 }
