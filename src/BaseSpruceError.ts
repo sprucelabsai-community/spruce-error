@@ -1,4 +1,5 @@
 import { SpruceErrorOptions, ISpruceErrorOptions } from './types'
+// @ts-ignore
 import StackUtils from 'stack-utils'
 const stack = new StackUtils({
 	cwd: process.cwd(),
