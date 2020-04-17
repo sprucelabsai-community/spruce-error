@@ -1,4 +1,4 @@
-import { SpruceErrorOptions, ISpruceErrorOptions } from './types'
+import { SpruceErrorOptions, ISpruceErrorOptions } from './error.types'
 
 Error.stackTraceLimit = Infinity
 
