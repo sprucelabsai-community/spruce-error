@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/sprucelabsai/spruce-error/compare/v1.1.0...v1.2.0) (2020-04-22)
+
+
+### Features
+
+* seperated out toString and toJson and call one from the other ([3a0a4d8](https://github.com/sprucelabsai/spruce-error/commit/3a0a4d8))
+
 # [1.1.0](https://github.com/sprucelabsai/spruce-error/compare/v1.0.12...v1.1.0) (2020-04-22)
 
 
