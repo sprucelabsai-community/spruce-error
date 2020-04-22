@@ -29,6 +29,11 @@ export default class BaseSpruceError<
 
 	/** Spruce errors stringify into something serialize'able */
 	public toString() {
+		return this.toJson()
+	}
+
+	/** Turn this error into a json string */
+	public toJson() {
 		return JSON.stringify({
 			options: {
 				...this.options,
