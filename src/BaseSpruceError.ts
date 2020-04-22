@@ -26,4 +26,15 @@ export default class BaseSpruceError<
 	public friendlyMessage(): string {
 		return this.options.friendlyMessage || this.message
 	}
+
+	/** Spruce errors stringify into something serialize'able */
+	public toString() {
+		return JSON.stringify({
+			options: {
+				...this.options,
+				friendlyMessage: this.friendlyMessage()
+			},
+			stack: this.stack
+		})
+	}
 }
