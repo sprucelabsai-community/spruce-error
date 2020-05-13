@@ -13,3 +13,6 @@ yarn-error.log*
 
 build/
 mercury.min.*
+
+# Mac
+.DS_Store
