@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/sprucelabsai/spruce-error/compare/v1.2.0...v1.3.0) (2020-05-13)
+
+
+### Features
+
+* readme update ([568b04c](https://github.com/sprucelabsai/spruce-error/commit/568b04c))
+
 # [1.2.0](https://github.com/sprucelabsai/spruce-error/compare/v1.1.0...v1.2.0) (2020-04-22)
 
 
