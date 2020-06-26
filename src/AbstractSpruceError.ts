@@ -2,7 +2,7 @@ import { SpruceErrorOptions, ISpruceErrorOptions } from './error.types'
 
 Error.stackTraceLimit = Infinity
 
-export default class BaseSpruceError<
+export default abstract class AbstractSpruceError<
 	T extends ISpruceErrorOptions = SpruceErrorOptions
 > extends Error {
 	public options: T
@@ -15,8 +15,12 @@ export default class BaseSpruceError<
 
 		// Preserve the stack
 		if (options.originalError) {
-			this.stack = options.originalError.stack
-			this.originalError = options.originalError
+			if (options.originalError instanceof Error) {
+				this.stack = options.originalError.stack
+				this.originalError = options.originalError
+			} else if (typeof options.originalError === 'string') {
+				this.originalError = new Error(options.originalError)
+			}
 		}
 
 		this.message = this.friendlyMessage()

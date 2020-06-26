@@ -1,11 +1,10 @@
 import { assert } from 'chai'
-import AbstractSpruceError from './BaseSpruceError'
+import AbstractSpruceError from './AbstractSpruceError'
 import { SpruceErrorCode } from './error.types'
-import Base from '../tests/Base'
 
 class SpruceError extends AbstractSpruceError {}
 
-class SpruceErrorTests extends Base {
+class SpruceErrorTests {
 	public setup() {
 		it('Can create a SpruceError', () => this.createError())
 	}
