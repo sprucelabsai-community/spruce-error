@@ -21,10 +21,10 @@
     "url": "https://github.com/sprucelabsai/spruce-error/issues"
   },
   "scripts": {
-    "build": "npm run clean && concurrently \"npm run build:node\" \"npm run build:umd\"",
-    "build:node": "tsc | true",
-    "build:browser": "tsc --project tsconfig.browser.json",
-    "build:umd": "rollup -c rollup.config.js",
+    "build": "npm run clean && concurrently \"npm run build.node\" \"npm run build.umd\"",
+    "build.node": "tsc | true",
+    "build.browser": "tsc --project tsconfig.browser.json",
+    "build.umd": "rollup -c rollup.config.js",
     "watch": "chokidar 'index.ts' 'src/**/*.(js|jsx|ts|tsx)' -c 'npm run build'",
     "clean": "rm -rf build/",
     "lint": "eslint '**/*.ts' && tsc -p . --noEmit",
