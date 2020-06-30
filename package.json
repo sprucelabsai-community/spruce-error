@@ -30,7 +30,9 @@
     "lint": "eslint '**/*.ts' && tsc -p . --noEmit",
     "lint:fix": "eslint --fix '**/*.ts'",
     "test": "mocha -r ts-node/register/transpile-only --exit '**/*.test.ts*'",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "arkit": "arkit -f index.ts -o arkit.svg",
+    "arkit.png": "arkit -f index.ts -o arkit.png"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
@@ -41,6 +43,7 @@
     "@types/chai": "^4.2.3",
     "@types/faker": "^4.1.11",
     "@types/mocha": "^5.2.7",
+    "arkit": "^1.6.4",
     "chai": "^4.2.0",
     "chokidar-cli": "^2.1.0",
     "concurrently": "^5.0.2",
