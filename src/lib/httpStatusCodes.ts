@@ -375,5 +375,5 @@ export enum HttpStatusCode {
 	 * Intended for use by intercepting proxies used to control access to the network (e.g., "captive portals" used
 	 * to require agreement to Terms of Service before granting full Internet access via a Wi-Fi hotspot).
 	 */
-	NetworkAuthenticationRequired = 511
+	NetworkAuthenticationRequired = 511,
 }

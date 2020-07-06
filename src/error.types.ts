@@ -4,7 +4,7 @@ import { HttpStatusCode } from './lib/httpStatusCodes'
 export enum SpruceErrorCode {
 	UnknownError = 'UNKNOWN_ERROR',
 	MissingParameters = 'MISSING_PARAMETERS',
-	InvalidParameters = 'INVALID_PARAMETERS'
+	InvalidParameters = 'INVALID_PARAMETERS',
 }
 
 // TODO find why `any` is required in Options generic
