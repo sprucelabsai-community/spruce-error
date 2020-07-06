@@ -38,7 +38,7 @@
     "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-json": "^4.0.1",
     "@rollup/plugin-node-resolve": "^8.1.0",
-    "@rollup/plugin-typescript": "^5.0.1",
+    "@rollup/plugin-typescript": "^2.0.1",
     "@sprucelabs/semantic-release": "^4.0.4",
     "@types/chai": "^4.2.3",
     "@types/faker": "^4.1.11",
