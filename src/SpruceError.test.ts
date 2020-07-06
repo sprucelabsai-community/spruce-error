@@ -12,7 +12,7 @@ class SpruceErrorTests {
 	public async createError() {
 		const spruceError = new SpruceError({
 			code: SpruceErrorCode.InvalidParameters,
-			parameters: ['test']
+			parameters: ['test'],
 		})
 
 		assert.isOk(spruceError)
