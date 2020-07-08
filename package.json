@@ -39,7 +39,7 @@
     "@rollup/plugin-json": "^4.0.1",
     "@rollup/plugin-node-resolve": "^8.1.0",
     "@rollup/plugin-typescript": "^2.0.1",
-    "@sprucelabs/semantic-release": "^4.0.4",
+    "@sprucelabs/semantic-release": "^4.0.5",
     "@types/chai": "^4.2.3",
     "@types/faker": "^4.1.11",
     "@types/mocha": "^7.0.2",
