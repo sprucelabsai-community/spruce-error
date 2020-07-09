@@ -48,7 +48,7 @@
     "chokidar-cli": "^2.1.0",
     "concurrently": "^5.0.2",
     "eslint": "^7.4.0",
-    "eslint-config-spruce": "^10.5.6",
+    "eslint-config-spruce": "^10.5.8",
     "faker": "^4.1.0",
     "mocha": "^8.0.1",
     "prettier": "^2.0.5",
@@ -60,8 +60,5 @@
     "typescript": "^3.9.6"
   },
   "peerDependencies": {},
-  "dependencies": {
-    "@hapi/rule-scope-start": "^2.2.0",
-    "eslint-plugin-spruce": "^10.5.7"
-  }
+  "dependencies": {}
 }
