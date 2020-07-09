@@ -9,7 +9,7 @@ export default {
 	// input: 'build/index.js',
 	input: 'index.ts',
 	output: {
-		file: 'build/umd/error.js',
+		dir: 'build',
 		format: 'umd',
 		name: 'spruceError',
 		sourcemap: true,
