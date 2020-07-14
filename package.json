@@ -33,8 +33,8 @@
     "release": "semantic-release",
     "arkit": "arkit -f index.ts -o docs/images/arkit.svg",
     "arkit.png": "arkit -f index.ts -o docs/images/arkit.png",
-    "upgrade.all": "yarn upgrade --latest && rm yarn.lock | true && yarn | true && yarn lint.fix | true",
-    "upgrade.local": "yarn upgrade.all && yarn lint && yarn test && yarn build"
+    "upgrade.base": "yarn upgrade --latest && rm yarn.lock | true && yarn | true && yarn lint.fix | true",
+    "upgrade": "yarn upgrade.base && yarn lint && yarn test && yarn build"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^13.0.1",
