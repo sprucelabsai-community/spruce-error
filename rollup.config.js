@@ -1,18 +1,18 @@
-import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
-import replace from 'rollup-plugin-replace'
+import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
 import builtins from 'rollup-plugin-node-builtins'
 import globals from 'rollup-plugin-node-globals'
+import replace from 'rollup-plugin-replace'
 
 export default {
 	// input: 'build/index.js',
 	input: 'index.ts',
 	output: {
-		file: 'build/umd/error.js',
+		dir: 'build',
 		format: 'umd',
 		name: 'spruceError',
-		sourceMap: true
+		sourcemap: true,
 	},
 	external: ['fs', 'http', 'https', 'child_process'],
 	plugins: [
@@ -20,19 +20,19 @@ export default {
 			include: ['node_modules/uuid/**'],
 			delimiters: ['', ''],
 			values: {
-				'crypto.randomBytes': "require('randombytes')"
-			}
+				'crypto.randomBytes': "require('randombytes')",
+			},
 		}),
 		typescript({
-			tsconfig: './tsconfig.browser.json'
+			tsconfig: './tsconfig.browser.json',
 		}),
 		resolve({
-			browser: true
+			browser: true,
 			// preferBuiltins: false
 		}),
 		commonjs({ extensions: ['.js', '.ts'] }),
 		globals(),
-		builtins()
+		builtins(),
 		// json()
-	]
+	],
 }

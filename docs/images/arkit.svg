@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="165px" preserveAspectRatio="none" style="width:217px;height:165px;" version="1.1" viewBox="0 0 217 165" width="217px" zoomAndPan="magnify"><defs/><g><ellipse cx="33.7487" cy="25.242" fill="#F8F8F8" rx="27.7487" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="35" x="16.2487" y="28.9842">index</text><!--MD5=[27ae68bae12180cb1ee40ae6b1d809b1]
+entity _AbstractSpruceError--><rect fill="#F8F8F8" height="34.4844" rx="3" ry="3" style="stroke: #000000; stroke-width: 0.5;" width="134" x="72.5" y="8"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="114" x="82.5" y="30.0059">AbstractSpruceError</text><!--MD5=[ef5e50216d009f7fc8286984140eef0b]
+entity _error_types--><rect fill="#F8F8F8" height="34.4844" rx="3" ry="3" style="stroke: #000000; stroke-width: 0.5;" width="81" x="46" y="64"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="61" x="56" y="86.0059">error.types</text><!--MD5=[21de2941cb1ae0a45769dd47c7f1d032]
+entity _httpStatusCodes--><rect fill="#F8F8F8" height="34.4844" rx="3" ry="3" style="stroke: #000000; stroke-width: 0.5;" width="116" x="28.5" y="120"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="96" x="38.5" y="142.0059">httpStatusCodes</text><!--MD5=[293288af40657bbaaaf11a4b62a5a80a]
+link _AbstractSpruceError to _error_types--><path d="M123.598,42.202 C118.043,47.862 111.744,54.2796 105.934,60.1994 " fill="none" id="_AbstractSpruceError-&gt;_error_types" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="102.3905,63.8097,111.5493,60.188,105.8927,60.2411,105.8395,54.5845,102.3905,63.8097" style="stroke: #000000; stroke-width: 0.5;"/><!--MD5=[1ab5504c9f9648a36af06383bfc83128]
+link _error_types to _httpStatusCodes--><path d="M86.5,98.2018 C86.5,103.3277 86.5,109.0754 86.5,114.5117 " fill="none" id="_error_types-&gt;_httpStatusCodes" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="86.5,119.8097,90.5,110.8097,86.5,114.8097,82.5,110.8097,86.5,119.8097" style="stroke: #000000; stroke-width: 0.5;"/><!--MD5=[c2d58d985058fcdfb6d88a17a8d35232]
+link <b>index</b> to _AbstractSpruceError--><path d="M61.2422,25 C63.191,25 65.1398,25 67.0886,25 " fill="none" id="&lt;b&gt;index&lt;/b&gt;-&gt;_AbstractSpruceError" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="72.2472,25,63.2472,21,67.2472,25,63.2472,29,72.2472,25" style="stroke: #000000; stroke-width: 1.0;"/><!--MD5=[4f1da46ffd155fb50a2060582e544e3d]
+link <b>index</b> to _error_types--><path d="M44.4816,37.189 C50.9437,43.773 59.3065,52.293 66.8681,59.9977 " fill="none" id="&lt;b&gt;index&lt;/b&gt;-&gt;_error_types" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="70.5039,63.7021,67.0543,54.4771,67.0015,60.1337,61.3449,60.0809,70.5039,63.7021" style="stroke: #000000; stroke-width: 1.0;"/><script type="text/plantuml"><![CDATA[MD5=[7af0d0bef68e479353e6ae096e5fb9ad]
+@startuml
+
+scale max 1920 width
+top to bottom direction
+
+skinparam nodesep 11
+skinparam ranksep 22
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName Tahoma
+skinparam defaultFontSize 12
+skinparam roundCorner 6
+skinparam dpi 150
+skinparam arrowColor black
+skinparam arrowThickness 0.5
+skinparam packageTitleAlignment left
+
+skinparam usecase {
+  borderThickness 0.5
+}
+
+skinparam rectangle {
+  borderThickness 0.5
+}
+
+skinparam component {
+  borderThickness 1
+}
+
+
+(<b>index</b>)
+rectangle "AbstractSpruceError" as _AbstractSpruceError
+rectangle "error.types" as _error_types
+rectangle "httpStatusCodes" as _httpStatusCodes
+
+
+_AbstractSpruceError --> _error_types
+_error_types --> _httpStatusCodes
+(<b>index</b>) -[thickness=1]> _AbstractSpruceError
+(<b>index</b>) -[thickness=1]> _error_types
+
+@enduml
+
+
+' View and edit on https://arkit.pro
+]]></script></g></svg>
