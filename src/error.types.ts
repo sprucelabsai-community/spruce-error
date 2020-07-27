@@ -1,17 +1,10 @@
 import { HttpStatusCode } from './lib/httpStatusCodes'
 
-// All error codes get dropped into this enum
-export enum SpruceErrorCode {
-	UnknownError = 'UNKNOWN_ERROR',
-	MissingParameters = 'MISSING_PARAMETERS',
-	InvalidParameters = 'INVALID_PARAMETERS',
-}
-
 // TODO find why `any` is required in Options generic
 /** Parent interface for all error options */
-export interface ISpruceErrorOptions<C extends any = any> {
-	/** The code that should match your error constant */
-	code: C
+export interface ISpruceErrorOptions {
+	/** Error code in CONST_CASE */
+	code: string
 	/** An easy to read version of the error */
 	friendlyMessage?: string
 	/** Tracking the error we caught previously if one exists  */
@@ -26,22 +19,19 @@ export type SpruceErrorOptions =
 	| ISpruceErrorMissingParameters
 	| ISpruceErrorInvalidParameters
 
-export interface ISpruceErrorUnknownError
-	extends ISpruceErrorOptions<SpruceErrorCode> {
+export interface ISpruceErrorUnknownError extends ISpruceErrorOptions {
 	/** * We aren't sure what happened */
-	code: SpruceErrorCode.UnknownError
+	code: 'UNKNOWN_ERROR'
 }
 
-export interface ISpruceErrorMissingParameters
-	extends ISpruceErrorOptions<SpruceErrorCode> {
+export interface ISpruceErrorMissingParameters extends ISpruceErrorOptions {
 	/** * Something is missing */
-	code: SpruceErrorCode.MissingParameters
+	code: 'MISSING_PARAMETERS'
 	parameters: string[]
 }
 
-export interface ISpruceErrorInvalidParameters
-	extends ISpruceErrorOptions<SpruceErrorCode> {
+export interface ISpruceErrorInvalidParameters extends ISpruceErrorOptions {
 	/** * Some parameter is bad */
-	code: SpruceErrorCode.InvalidParameters
+	code: 'INVALID_PARAMETERS'
 	parameters: string[]
 }
