@@ -1,6 +1,5 @@
 import { assert } from 'chai'
 import AbstractSpruceError from './AbstractSpruceError'
-import { SpruceErrorCode } from './error.types'
 
 class SpruceError extends AbstractSpruceError {}
 
@@ -11,7 +10,7 @@ class SpruceErrorTests {
 
 	public async createError() {
 		const spruceError = new SpruceError({
-			code: SpruceErrorCode.InvalidParameters,
+			code: 'INVALID_PARAMETERS',
 			parameters: ['test']
 		})
 
