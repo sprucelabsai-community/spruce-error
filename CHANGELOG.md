@@ -1,3 +1,10 @@
+# [2.0.0](https://github.com/sprucelabsai/spruce-error/compare/v1.3.46...v2.0.0) (2020-07-27)
+
+
+### Breaking Changes
+
+* drop enum ([165692c](https://github.com/sprucelabsai/spruce-error/commit/165692c))
+
 ## [1.3.46](https://github.com/sprucelabsai/spruce-error/compare/v1.3.45...v1.3.46) (2020-07-27)
 
 ## [1.3.45](https://github.com/sprucelabsai/spruce-error/compare/v1.3.44...v1.3.45) (2020-07-24)
