@@ -41,9 +41,9 @@ export default abstract class AbstractSpruceError<
 		return JSON.stringify({
 			options: {
 				...this.options,
-				friendlyMessage: this.friendlyMessage(),
+				friendlyMessage: this.friendlyMessage()
 			},
-			stack: this.stack,
+			stack: this.stack
 		})
 	}
 }
