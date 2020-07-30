@@ -52,7 +52,7 @@
     "eslint": "^7.5.0",
     "eslint-config-spruce": "^10.7.4",
     "faker": "^4.1.0",
-    "mocha": "^8.0.1",
+    "mocha": "^8.1.0",
     "prettier": "^2.0.5",
     "rollup": "^2.23.0",
     "rollup-plugin-node-builtins": "^2.1.2",
