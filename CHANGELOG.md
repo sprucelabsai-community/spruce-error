@@ -1,3 +1,10 @@
+## [2.0.46](https://github.com/sprucelabsai/spruce-error/compare/v2.0.45...v2.0.46) (2020-08-10)
+
+
+### Bug Fixes
+
+* build.node tsc should fail if it fails ([201140f](https://github.com/sprucelabsai/spruce-error/commit/201140f))
+
 ## [2.0.45](https://github.com/sprucelabsai/spruce-error/compare/v2.0.44...v2.0.45) (2020-08-10)
 
 ## [2.0.44](https://github.com/sprucelabsai/spruce-error/compare/v2.0.43...v2.0.44) (2020-08-10)
