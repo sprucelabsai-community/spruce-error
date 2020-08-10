@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "npm run clean && npm run build.umd && npm run build.node",
-    "build.node": "tsc | true",
+    "build.node": "tsc",
     "build.browser": "tsc --project tsconfig.browser.json",
     "build.umd": "rollup -c rollup.config.js && mkdir -p build/umd && cd build && sed s/index.js.map/error.js.map/ index.js > umd/error.js && mv index.js.map umd/error.js.map",
     "watch": "chokidar 'index.ts' 'src/**/*.(js|jsx|ts|tsx)' -c 'npm run build'",
