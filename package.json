@@ -45,7 +45,7 @@
     "@sprucelabs/semantic-release": "^4.0.5",
     "@types/chai": "^4.2.12",
     "@types/faker": "^4.1.11",
-    "@types/mocha": "^8.0.1",
+    "@types/mocha": "^8.0.2",
     "arkit": "^1.6.4",
     "chai": "^4.2.0",
     "chokidar-cli": "^2.1.0",
