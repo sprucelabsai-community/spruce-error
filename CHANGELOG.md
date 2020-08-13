@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/sprucelabsai/spruce-error/compare/v2.1.4...v2.2.0) (2020-08-13)
+
+
+### Features
+
+* handle failed error parse ([d6cad31](https://github.com/sprucelabsai/spruce-error/commit/d6cad31))
+
 ## [2.1.4](https://github.com/sprucelabsai/spruce-error/compare/v2.1.3...v2.1.4) (2020-08-13)
 
 ## [2.1.3](https://github.com/sprucelabsai/spruce-error/compare/v2.1.2...v2.1.3) (2020-08-13)
