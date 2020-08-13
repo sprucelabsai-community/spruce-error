@@ -19,4 +19,10 @@ export default class ConvertingToAndFromStringTest extends AbstractSpruceTest {
 
 		assert.isEqual(parsedError.options.code, error.options.code)
 	}
+
+	@test()
+	protected static async handlesFailedConversion() {
+		const parsedError = AbstractSpruceError.parse('taco bell', SpruceError)
+		assert.isEqual(parsedError.options.code, 'UNKNOWN_ERROR')
+	}
 }
