@@ -11,6 +11,6 @@ export default class SpruceErrorTests {
 			parameters: ['test'],
 		})
 
-		assert.isOk(spruceError)
+		assert.isTruthy(spruceError)
 	}
 }
