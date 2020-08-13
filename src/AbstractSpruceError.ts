@@ -2,6 +2,8 @@ import { SpruceErrorOptions, ISpruceErrorOptions } from './error.types'
 
 Error.stackTraceLimit = Infinity
 
+type MyInstanceType<T extends { prototype: any }> = T['prototype']
+
 export default abstract class AbstractSpruceError<
 	T extends ISpruceErrorOptions = SpruceErrorOptions
 > extends Error {
@@ -47,11 +49,13 @@ export default abstract class AbstractSpruceError<
 		})
 	}
 
-	//@ts-ignore
-	public static parse<T>(json: string, ClassRef: T): InstanceType<T> {
+	public static parse<T extends { prototype: any }>(
+		json: string,
+		ClassRef: T
+	): MyInstanceType<T> {
 		const { options, stack } = JSON.parse(json)
 
-		//@ts-ignore
+		// @ts-ignore
 		const err = new ClassRef(options)
 		err.stack = stack
 
