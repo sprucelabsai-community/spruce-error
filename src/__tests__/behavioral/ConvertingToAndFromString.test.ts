@@ -15,7 +15,7 @@ export default class ConvertingToAndFromStringTest extends AbstractSpruceTest {
 
 		assert.doesInclude(string, 'taco')
 
-		const parsedError = SpruceError.parse(string, SpruceError)
+		const parsedError = AbstractSpruceError.parse(string, SpruceError)
 
 		assert.isEqual(parsedError.options.code, error.options.code)
 	}

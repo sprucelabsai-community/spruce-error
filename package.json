@@ -23,9 +23,10 @@
     "scripts": {
         "build": "yarn clean && yarn build.umd && yarn build.tsc",
         "build.tsc": "tsc",
+        "build.types": "tsc --emitDeclarationOnly && echo PASS",
         "build.browser": "tsc --project tsconfig.browser.json",
         "build.umd": "rollup -c rollup.config.js && mkdir -p build/umd && cd build && sed s/index.js.map/error.js.map/ index.js > umd/error.js && mv index.js.map umd/error.js.map",
-        "build.watch": "chokidar 'index.ts' 'src/**/*.(js|jsx|ts|tsx)' -c 'yarn build'",
+        "build.watch": "concurrently 'yarn build -w' \"chokidar 'index.ts' 'src/**/*.(js|jsx|ts|tsx)' -c 'yarn build.umd'\"",
         "clean": "rm -rf build/",
         "lint": "eslint '**/*.ts' && tsc -p . --noEmit",
         "lint.fix": "eslint --fix '**/*.ts'",
