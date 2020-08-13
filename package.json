@@ -6,7 +6,7 @@
     "files": [
         "build"
     ],
-    "version": "2.1.0",
+    "version": "2.1.1",
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
     "description": "Error handling in the Spruce Experience Platform",
