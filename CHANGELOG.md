@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/sprucelabsai/spruce-error/compare/v2.0.62...v2.1.0) (2020-08-13)
+
+
+### Features
+
+* build before lint ([fff6520](https://github.com/sprucelabsai/spruce-error/commit/fff6520))
+
 ## [2.0.62](https://github.com/sprucelabsai/spruce-error/compare/v2.0.61...v2.0.62) (2020-08-13)
 
 ## [2.0.61](https://github.com/sprucelabsai/spruce-error/compare/v2.0.60...v2.0.61) (2020-08-13)
