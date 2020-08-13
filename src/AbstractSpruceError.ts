@@ -53,12 +53,21 @@ export default abstract class AbstractSpruceError<
 		json: string,
 		ClassRef: T
 	): MyInstanceType<T> {
-		const { options, stack } = JSON.parse(json)
+		try {
+			const { options, stack } = JSON.parse(json)
 
-		// @ts-ignore
-		const err = new ClassRef(options)
-		err.stack = stack
+			// @ts-ignore
+			const err = new ClassRef(options)
+			err.stack = stack
 
-		return err
+			return err
+		} catch (err) {
+			// @ts-ignore
+			return new ClassRef({
+				code: 'UNKNOWN_ERROR',
+				friendlyMessage: `I was not able to parse an incoming error. Original message is ${json}.`,
+				originalError: new Error(json),
+			})
+		}
 	}
 }
