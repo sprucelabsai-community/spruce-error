@@ -46,4 +46,15 @@ export default abstract class AbstractSpruceError<
 			stack: this.stack,
 		})
 	}
+
+	//@ts-ignore
+	public static parse<T>(json: string, ClassRef: T): InstanceType<T> {
+		const { options, stack } = JSON.parse(json)
+
+		//@ts-ignore
+		const err = new ClassRef(options)
+		err.stack = stack
+
+		return err
+	}
 }
