@@ -2,7 +2,10 @@
     "compilerOptions": {
         "module": "es2015",
         "target": "es5",
-        "lib": ["es2015", "dom"],
+        "lib": [
+            "es2015",
+            "dom"
+        ],
         "esModuleInterop": true,
         "moduleResolution": "node",
         "declaration": true,
@@ -17,9 +20,17 @@
         "baseUrl": ".",
         "experimentalDecorators": true,
         "paths": {
-            "*": ["node_modules/*"]
+            "*": [
+                "node_modules/*"
+            ]
         }
     },
-    "include": ["./*.ts", "./**/*.ts"],
-    "exclude": ["**/node_modules/*", "build/*"]
+    "include": [
+        "./*.ts",
+        "./**/*.ts"
+    ],
+    "exclude": [
+        "**/node_modules/*",
+        "build/*"
+    ]
 }
