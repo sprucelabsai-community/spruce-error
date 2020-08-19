@@ -1381,10 +1381,10 @@
     conventional-changelog-sprucelabs "^1.1.0"
     semantic-release "^17.0.4"
 
-"@sprucelabs/test@^6.0.20":
-  version "6.0.20"
-  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-6.0.20.tgz#9af8cdb3d8fd8d1c4d074f039dc0c51f74264897"
-  integrity sha512-x+oWaQf9+AAEkc9tMerrA6xdXCFi9kpcXHTzZiY/6g7kaWwIkrG1P85/yDy5sfUwLOPeD9QaTXPjie9bj166mQ==
+"@sprucelabs/test@^6.0.21":
+  version "6.0.21"
+  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-6.0.21.tgz#efe7b0fef2ab782630202a788425df542f6f3836"
+  integrity sha512-qNi5qEfxZmQG3KakMD3RZRPEKdcg5BlFpS3nBTgLbqN4L6WyMX4XTxuoVc5lIvN9jQx54GyazrK2U2J2vYIpqw==
   dependencies:
     "@babel/core" "^7.11.1"
     "@babel/preset-env" "^7.11.0"
@@ -8259,10 +8259,10 @@ rollup-pluginutils@^2.3.1, rollup-pluginutils@^2.6.0:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.26.3:
-  version "2.26.3"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.26.3.tgz#502c755872a4590937cfa4e8f7eb99d3bc3c4025"
-  integrity sha512-Mlt39/kL2rA9egcbQbaZV1SNVplGqYYhDDMcGgHPPE0tvM3R4GrB+IEdYy2QtTrdzMQx57ZcqDFf/KWWm8F+uw==
+rollup@^2.26.4:
+  version "2.26.4"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.26.4.tgz#a8350fd6bd56fce9873a7db2bd9547d40de3992b"
+  integrity sha512-6+qsGuP0MXGd7vlYmk72utm1MrgZj5GfXibGL+cRkKQ9+ZL/BnFThDl0D5bcl7AqlzMjAQXRAwZX1HVm22M/4Q==
   optionalDependencies:
     fsevents "~2.1.2"
 
