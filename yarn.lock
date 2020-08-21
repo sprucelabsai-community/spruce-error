@@ -1379,10 +1379,10 @@
     conventional-changelog-sprucelabs "^1.1.0"
     semantic-release "^17.0.4"
 
-"@sprucelabs/test@^6.0.29":
-  version "6.0.29"
-  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-6.0.29.tgz#14db3e167da5b50c2c0330fa4829dff2e7284341"
-  integrity sha512-PGZ1CUtdsjuxPawq1Rw69N73d35ow84fuIst6ErNIxtmyEgItdDwxBkmMnItu75rOo/BO8PRdj3466ImWDvhsg==
+"@sprucelabs/test@^6.0.30":
+  version "6.0.30"
+  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-6.0.30.tgz#2b9ccd31139bef9a813169ca62f8de0191a1cefc"
+  integrity sha512-Zn7KqegDUVKorhZ3nv5vgr3Rl5l+29HmMFw4mlEHoCHkS2N4fkAF17Cr2RC9VKpkgvfK39mX0aKKcER9BcDaZA==
   dependencies:
     "@babel/core" "^7.11.4"
     "@babel/preset-env" "^7.11.0"
@@ -9215,10 +9215,10 @@ ts-morph@^7.0.0:
     "@ts-morph/common" "~0.5.2"
     code-block-writer "^10.1.0"
 
-ts-node@^8.8.1:
-  version "8.10.2"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.10.2.tgz#eee03764633b1234ddd37f8db9ec10b75ec7fb8d"
-  integrity sha512-ISJJGgkIpDdBhWVu3jufsWpK3Rzo7bdiIXJjQc0ynKxVOVcg2oIrf2H2cejminGrptVc6q6/uynAHNCuWGbpVA==
+ts-node@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.0.0.tgz#e7699d2a110cc8c0d3b831715e417688683460b3"
+  integrity sha512-/TqB4SnererCDR/vb4S/QvSZvzQMJN8daAslg7MeaiHvD8rDZsSfXmNeNumyZZzMned72Xoq/isQljYSt8Ynfg==
   dependencies:
     arg "^4.1.0"
     diff "^4.0.1"
