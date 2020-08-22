@@ -1379,17 +1379,17 @@
     conventional-changelog-sprucelabs "^1.1.0"
     semantic-release "^17.0.4"
 
-"@sprucelabs/test@^6.0.33":
-  version "6.0.33"
-  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-6.0.33.tgz#cdbb8b5332b83d208e18562dbff35c4c09e1842d"
-  integrity sha512-NJwvgvrMFWCjl+siS1WIg+he0Y7QMZ49Mk3Csmn9p5Q08m1vShG+oDGB79XXQmcVTfwNxWkDSk4jdfOVqWwMQQ==
+"@sprucelabs/test@^6.0.34":
+  version "6.0.34"
+  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-6.0.34.tgz#d55e040a1bff8ce2cb16e3785b25fa63f700ad91"
+  integrity sha512-ZWFgx0isX+E6oWexkDUwRn8jAGJGb0ZIWIceNTnWWe5tOAZS8paBcBVteVGQpY6ldVX7W6AOxBkrn2K+6InuRg==
   dependencies:
     "@babel/core" "^7.11.4"
     "@babel/preset-env" "^7.11.0"
     "@types/jest" "^26.0.10"
     babel-jest "^26.3.0"
     deep-equal "^2.0.3"
-    jest "^26.4.1"
+    jest "^26.4.2"
     lodash "^4.17.20"
     ts-expect "^1.1.0"
     ts-jest "^26.2.0"
@@ -5573,7 +5573,7 @@ jest-worker@^26.3.0:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jest@^26.4.1, jest@^26.4.2:
+jest@^26.4.2:
   version "26.4.2"
   resolved "https://registry.yarnpkg.com/jest/-/jest-26.4.2.tgz#7e8bfb348ec33f5459adeaffc1a25d5752d9d312"
   integrity sha512-LLCjPrUh98Ik8CzW8LLVnSCfLaiY+wbK53U7VxnFSX7Q+kWC4noVeDvGWIFw0Amfq1lq2VfGm7YHWSLBV62MJw==
