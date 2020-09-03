@@ -18,7 +18,7 @@
     invariant "^2.2.4"
     semver "^5.5.0"
 
-"@babel/core@^7.1.0", "@babel/core@^7.11.5", "@babel/core@^7.7.5":
+"@babel/core@^7.1.0", "@babel/core@^7.11.6", "@babel/core@^7.7.5":
   version "7.11.6"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.11.6.tgz#3a9455dc7387ff1bac45770650bc13ba04a15651"
   integrity sha512-Wpcv03AGnmkgm6uS6k8iwhIwTrcP0m17TL1n1sy7qD0qelDu4XNeW0dN0mHfa+Gei211yDaLoEe/VlbXQzM4Bg==
@@ -1395,12 +1395,12 @@
     conventional-changelog-sprucelabs "^1.1.0"
     semantic-release "^17.0.4"
 
-"@sprucelabs/test@^6.0.106":
-  version "6.0.106"
-  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-6.0.106.tgz#4ebe5a01cb2738e4b1911928c3ed9fc61bbb966a"
-  integrity sha512-PjPdR3ChDtOVxrUTJE2+azcWtGaB5lAWR4gFb7vnY85H/h1G54/67Ui7oCCkpGDJ6oQ7l25K1XGFHM0aFQ6LEw==
+"@sprucelabs/test@^6.0.107":
+  version "6.0.107"
+  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-6.0.107.tgz#df292bead06d6dba68f55cfe3070f80e2bb9e317"
+  integrity sha512-CjzHgPjdO5HTTypovTRb0Cy5txV540f2y7uTWJ3NumuFHiiovx6gOxL+MXQf+r3P1q5QtPbiI686/sFHms8Jaw==
   dependencies:
-    "@babel/core" "^7.11.5"
+    "@babel/core" "^7.11.6"
     "@babel/preset-env" "^7.11.5"
     "@types/jest" "^26.0.13"
     babel-jest "^26.3.0"
