@@ -1395,10 +1395,10 @@
     conventional-changelog-sprucelabs "^1.1.0"
     semantic-release "^17.0.4"
 
-"@sprucelabs/test@^6.0.119":
-  version "6.0.119"
-  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-6.0.119.tgz#c62ab2fb7bd0dac1b708c2f1782b01725ad177cd"
-  integrity sha512-ULa5M//QmM0TaA8lviw1zo7ID1BQ1bee43a/0a0e2Vvn3bJCPa0okarIcfKXkPYP51PBy9p/fpp0/LMyDmlTsg==
+"@sprucelabs/test@^6.0.120":
+  version "6.0.120"
+  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-6.0.120.tgz#f318bfef47e78cf76566f3fe18d15e78e3697952"
+  integrity sha512-s+gGBXjHf3RFUL7cJ54Sfx+lCC+jVupFGVPONY2sdY1iomyVz6uJr/FduEuTKQeqmEi5kYqZS0pR8LiX62cVLA==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/preset-env" "^7.11.5"
@@ -9663,9 +9663,9 @@ whatwg-mimetype@^2.3.0:
   integrity sha512-M4yMwr6mAnQz76TbJm914+gPpB/nCwvZbJU28cUD6dR004SAxDLOOSUaB1JDRqLtaOV/vi0IC5lEAGFgrjGv/g==
 
 whatwg-url@^8.0.0:
-  version "8.2.1"
-  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-8.2.1.tgz#ed73417230784b281fb2a32c3c501738b46167c3"
-  integrity sha512-ZmVCr6nfBeaMxEHALLEGy0LszYjpJqf6PVNQUQ1qd9Et+q7Jpygd4rGGDXgHjD8e99yLFseD69msHDM4YwPZ4A==
+  version "8.2.2"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-8.2.2.tgz#85e7f9795108b53d554cec640b2e8aee2a0d4bfd"
+  integrity sha512-PcVnO6NiewhkmzV0qn7A+UZ9Xx4maNTI+O+TShmfE4pqjoCMwUMjkvoNhNHPTvgR7QH9Xt3R13iHuWy2sToFxQ==
   dependencies:
     lodash.sortby "^4.7.0"
     tr46 "^2.0.2"
