@@ -1395,10 +1395,10 @@
     conventional-changelog-sprucelabs "^1.1.0"
     semantic-release "^17.0.4"
 
-"@sprucelabs/test@^6.0.122":
-  version "6.0.122"
-  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-6.0.122.tgz#aef88e2af6c3d6be3fe2fa8f3027c114d8373c7d"
-  integrity sha512-HikpEz77OleFM8n2Y20/BBY5idE3Zpckx/4hLhFaby1kQwBUjbeqjDQlZXsRz4Q9zD469ynCxoLvHOzgQR2wDg==
+"@sprucelabs/test@^6.0.123":
+  version "6.0.123"
+  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-6.0.123.tgz#9c7d89081ae6c534b9d970da47ddaca6cf90c8b1"
+  integrity sha512-5G2fshu92IkMIB9SvxsLOoiHGMD1bbsL5abEY9Fu3lXFMUIzxLO9buQ+ZT+3rK/8xBNs/L63y9+T+mz751ZkCw==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/preset-env" "^7.11.5"
@@ -6782,9 +6782,9 @@ node-notifier@^8.0.0:
     which "^2.0.2"
 
 node-releases@^1.1.60:
-  version "1.1.60"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.60.tgz#6948bdfce8286f0b5d0e5a88e8384e954dfe7084"
-  integrity sha512-gsO4vjEdQaTusZAEebUWp2a5d7dF5DYoIpDG7WySnk7BuZDW+GPpHXoXXuYawRBr/9t5q54tirPz79kFIWg4dA==
+  version "1.1.61"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.61.tgz#707b0fca9ce4e11783612ba4a2fcba09047af16e"
+  integrity sha512-DD5vebQLg8jLCOzwupn954fbIiZht05DAZs0k2u8NStSe6h9XdsuIQL8hSRKYiU8WUQRznmSDrKGbv3ObOmC7g==
 
 nopt@^4.0.1, nopt@^4.0.3:
   version "4.0.3"
