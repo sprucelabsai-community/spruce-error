@@ -1395,15 +1395,16 @@
     conventional-changelog-sprucelabs "^1.1.0"
     semantic-release "^17.0.4"
 
-"@sprucelabs/test@^7.0.46":
-  version "7.0.46"
-  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-7.0.46.tgz#f5a596b22db24d2bc1f5bddf6db12e8d8d44b8b7"
-  integrity sha512-oF7RyzGok/NTdbpr79IG5TuDx318YLpB6LXRUHkcMuXF5CtXasKQAQvwdZOVNAwOhu9l39RfaWG+bV/slfxlig==
+"@sprucelabs/test@^7.0.47":
+  version "7.0.47"
+  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-7.0.47.tgz#80bcd5fa6f0257f56b3c22ad562f9e576d228f57"
+  integrity sha512-TOECYY8UFCv4/8J76KtOZ0uwZgB2M5Oj++ruuGj7bYXL4zh7ffUo8r/5P8iZgnpEr3ScTxQNFNCXRvMNwbeCfg==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/preset-env" "^7.11.5"
     "@types/jest" "^26.0.14"
     babel-jest "^26.3.0"
+    chalk "^4.1.0"
     deep-equal "^2.0.3"
     jest "^26.4.2"
     lodash "^4.17.20"
@@ -2528,7 +2529,7 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.0.0:
+chalk@^4.0.0, chalk@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
   integrity sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
