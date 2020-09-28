@@ -1395,10 +1395,10 @@
     conventional-changelog-sprucelabs "^1.1.0"
     semantic-release "^17.0.4"
 
-"@sprucelabs/test@^7.0.71":
-  version "7.0.71"
-  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-7.0.71.tgz#3d3cae23480a1c2f2667b316cb6c3a426005ee81"
-  integrity sha512-Rwentefn/1Ktgv+UEYYzbNeQDlP8rUGPemSyvn0SithT95pjfFWZZTD3QDLdgGMg/riNmHyBWrPEEhzIu6NAbQ==
+"@sprucelabs/test@^7.0.73":
+  version "7.0.73"
+  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-7.0.73.tgz#d42fc275277775844257e182d2fb6290be1f97ff"
+  integrity sha512-zdGuJVJ+enW152muafXBgrwbDB7pf/d0oIfKgoyZCQlFsTecgN36IXq6HYgsCc8nKaunshUTy8hHzWHSZoPDtw==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/preset-env" "^7.11.5"
@@ -3151,9 +3151,9 @@ decamelize@^1.1.0, decamelize@^1.1.1, decamelize@^1.2.0:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decimal.js@^10.2.0:
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/decimal.js/-/decimal.js-10.2.0.tgz#39466113a9e036111d02f82489b5fd6b0b5ed231"
-  integrity sha512-vDPw+rDgn3bZe1+F/pyEwb1oMG2XTlRVgAa6B4KccTEpYgF8w6eQllVbQcfIJnZyvzFtFpxnpGtx8dd7DJp/Rw==
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/decimal.js/-/decimal.js-10.2.1.tgz#238ae7b0f0c793d3e3cea410108b35a2c01426a3"
+  integrity sha512-KaL7+6Fw6i5A2XSnsbhm/6B+NuEA7TZ4vqxnd5tXz9sbKtrN9Srj8ab4vKVdK8YAqZO9P1kg45Y6YLoduPf+kw==
 
 decode-uri-component@^0.2.0:
   version "0.2.0"
