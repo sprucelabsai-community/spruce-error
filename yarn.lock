@@ -1395,17 +1395,17 @@
     conventional-changelog-sprucelabs "^1.1.0"
     semantic-release "^17.0.4"
 
-"@sprucelabs/test@^7.0.90":
-  version "7.0.90"
-  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-7.0.90.tgz#ed4bdceb3b70eac900654ef0d8c1296549571f30"
-  integrity sha512-bDXEChWPyZj/r8hrG3YXCQbUa6EyjRYzNcfwJ35JH4CDs0oPF+aWqOjVFQ0XKZV6qMQPErbjsTzWix3U1T1tAw==
+"@sprucelabs/test@^7.0.91":
+  version "7.0.91"
+  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-7.0.91.tgz#5b9c16376ae76bb7819c565d3486fa0186f8d8ff"
+  integrity sha512-QG7NELwPl1v8YKIIF5PuoQTf0ZltMvpl9Zvu8Ahr8Gm2Vhz9IW3ejTTvTjz7/qBpi9o59owktUD66y0IYfcA3w==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/preset-env" "^7.11.5"
     "@types/jest" "^26.0.14"
     babel-jest "^26.3.0"
     chalk "^4.1.0"
-    deep-equal "^2.0.3"
+    deep-equal "^2.0.4"
     jest "^26.4.2"
     lodash "^4.17.20"
     ts-expect "^1.1.0"
@@ -3160,7 +3160,7 @@ decode-uri-component@^0.2.0:
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
 
-deep-equal@^2.0.3:
+deep-equal@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-2.0.4.tgz#6b0b407a074666033169df3acaf128e1c6f3eab6"
   integrity sha512-BUfaXrVoCfgkOQY/b09QdO9L3XNoF2XH0A3aY9IQwQL/ZjLOe8FQgCNVl1wiolhsFo8kFdO9zdPViCPbmaJA5w==
