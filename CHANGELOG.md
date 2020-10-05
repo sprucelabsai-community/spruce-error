@@ -1,3 +1,5 @@
+## [2.2.413](https://github.com/sprucelabsai/spruce-error/compare/v2.2.412...v2.2.413) (2020-10-05)
+
 ## [2.2.412](https://github.com/sprucelabsai/spruce-error/compare/v2.2.411...v2.2.412) (2020-10-05)
 
 ## [2.2.411](https://github.com/sprucelabsai/spruce-error/compare/v2.2.410...v2.2.411) (2020-10-05)
