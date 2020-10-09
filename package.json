@@ -6,7 +6,7 @@
     "files": [
         "build"
     ],
-    "version": "2.2.446",
+    "version": "2.2.447",
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
     "description": "Error reporting that's really, really helpful. 💡",
