@@ -1395,10 +1395,10 @@
     conventional-changelog-sprucelabs "^1.1.2"
     semantic-release "^17.1.2"
 
-"@sprucelabs/test@^7.0.132":
-  version "7.0.132"
-  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-7.0.132.tgz#3aa67ef4af88e312ec2fa8f3f5a715ddb4704e3f"
-  integrity sha512-trpjTR3G6CknFHq6oMa7kaYVCi0LI/GVxuipQ27i/5sxXO7as0XSmecUAWORaTxTROc4nk/XUPpN/mfoWjnL7g==
+"@sprucelabs/test@^7.0.133":
+  version "7.0.133"
+  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-7.0.133.tgz#a4e3dc3df9f8c6e2863cc059edac27d29189b9e0"
+  integrity sha512-zZXu+JcnBUjxT1L5VllEjmd2eyje6mluDvebIshFaF/ALOqc+Mjk3OoR/3HFWCgPmW8OPa4Y/ZFiQMFkjN6sCA==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/preset-env" "^7.11.5"
