@@ -36,7 +36,7 @@
         "arkit": "arkit -f index.ts -o docs/images/arkit.svg",
         "arkit.png": "arkit -f index.ts -o docs/images/arkit.png",
         "upgrade.packages": "yarn upgrade --latest && rm yarn.lock | true && yarn | true && yarn lint.fix | true",
-        "upgrade.packages.all": "yarn upgrade.packages",
+        "upgrade.packages.all": "yarn install && yarn upgrade.packages",
         "upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build && yarn test"
     },
     "devDependencies": {
