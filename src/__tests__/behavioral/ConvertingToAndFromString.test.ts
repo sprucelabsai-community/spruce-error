@@ -25,4 +25,41 @@ export default class ConvertingToAndFromStringTest extends AbstractSpruceTest {
 		const parsedError = AbstractSpruceError.parse('taco bell', SpruceError)
 		assert.isEqual(parsedError.options.code, 'UNKNOWN_ERROR')
 	}
+
+	@test()
+	protected static async canStringifyOriginalErrorAsSpruceError() {
+		const error = new SpruceError({
+			code: 'INVALID_PARAMETERS',
+			parameters: ['taco'],
+			originalError: new SpruceError({
+				code: 'INVALID_PARAMETERS',
+				parameters: ['bell'],
+			}),
+		})
+
+		const string = error.toString()
+		const parsedError = AbstractSpruceError.parse(string, SpruceError)
+		assert.isTruthy(parsedError.originalError instanceof AbstractSpruceError)
+		assert.isEqual(
+			//@ts-ignore
+			parsedError.originalError?.options.code,
+			'INVALID_PARAMETERS'
+		)
+		//@ts-ignore
+		assert.isEqual(parsedError.originalError.options.parameters[0], 'bell')
+	}
+
+	@test()
+	protected static async canStringifyOriginalErrorAsError() {
+		const error = new SpruceError({
+			code: 'INVALID_PARAMETERS',
+			parameters: ['taco'],
+			originalError: new Error('Bell'),
+		})
+
+		const string = error.toString()
+		const parsedError = AbstractSpruceError.parse(string, SpruceError)
+		assert.isTruthy(parsedError.originalError instanceof Error)
+		assert.isEqual(parsedError.originalError?.message, 'Bell')
+	}
 }

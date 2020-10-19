@@ -1,42 +1,38 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
     {
       "type": "node",
       "request": "launch",
-      "name": "Test File",
-      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
-      "args": [
-        "${file}"
+      "name": "test.file",
+      "runtimeExecutable": "${env:NVM_BIN}/node",
+      "runtimeArgs": [
+        "--trace-uncaught",
+        "--inspect-brk",
+        "--trace-warnings",
+        "${workspaceFolder}/node_modules/.bin/jest",
+        "${fileBasenameNoExtension}",
+        "--detectOpenHandles"
       ],
-      "skipFiles": [
-        "node_modules",
-        "async_hooks.js",
-        "inspector_async_hooks.js"
-      ]
+      "port": 9229,
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "Test API",
-      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
-      "args": [
-        "${workspaceRoot}/index.test.js"
+      "name": "test.all",
+      "runtimeExecutable": "${env:NVM_BIN}/node",
+      "runtimeArgs": [
+        "--inspect-brk",
+        "--trace-warnings",
+        "${workspaceFolder}/node_modules/.bin/jest"
       ],
-      "skipFiles": [
-        "coverage",
-        "node_modules"
-      ]
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Test All",
-      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
-      "skipFiles": []
+      "port": 9229,
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
     }
   ]
 }
