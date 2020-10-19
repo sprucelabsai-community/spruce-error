@@ -18,6 +18,24 @@ export default class ConvertingToAndFromStringTest extends AbstractSpruceTest {
 		const parsedError = AbstractSpruceError.parse(string, SpruceError)
 
 		assert.isEqual(parsedError.options.code, error.options.code)
+		assert.isTruthy(parsedError.stack)
+	}
+
+	@test()
+	protected static async convertingToAndFromObject() {
+		const error = new SpruceError({
+			code: 'INVALID_PARAMETERS',
+			parameters: ['taco'],
+		})
+
+		const expectedStack = error.stack
+		const object = error.toObject()
+
+		const parsedError = AbstractSpruceError.parse(object, SpruceError)
+
+		assert.isEqual(parsedError.options.code, error.options.code)
+		assert.isEqualDeep(parsedError.stack, expectedStack)
+		assert.isTruthy(parsedError.stack)
 	}
 
 	@test()

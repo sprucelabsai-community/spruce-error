@@ -66,21 +66,26 @@ export default abstract class AbstractSpruceError<
 	}
 
 	public toJson() {
-		return JSON.stringify({
+		return JSON.stringify(this.toObject())
+	}
+
+	public toObject(): any {
+		return {
 			options: {
 				...this.serializeOriginalError(this.options),
 				friendlyMessage: this.friendlyMessage(),
 			},
 			stack: this.stack,
-		})
+		}
 	}
 
 	public static parse<T extends { prototype: any }>(
-		json: string,
+		json: string | Record<string, any>,
 		ClassRef: T
 	): MyInstanceType<T> {
 		try {
-			const { options, stack } = JSON.parse(json)
+			const { options, stack } =
+				typeof json === 'string' ? JSON.parse(json) : json
 
 			// @ts-ignore
 			const err = new ClassRef(options)
@@ -88,11 +93,12 @@ export default abstract class AbstractSpruceError<
 
 			return err
 		} catch (err) {
+			const stringified = typeof json === 'string' ? json : JSON.stringify(json)
 			// @ts-ignore
 			return new ClassRef({
 				code: 'UNKNOWN_ERROR',
-				friendlyMessage: `I was not able to parse an incoming error. Original message is ${json}.`,
-				originalError: new Error(json),
+				friendlyMessage: `I was not able to parse an incoming error. Original message is ${stringified}.`,
+				originalError: new Error(stringified),
 			})
 		}
 	}
