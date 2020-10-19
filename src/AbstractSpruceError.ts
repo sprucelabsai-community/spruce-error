@@ -15,34 +15,60 @@ export default abstract class AbstractSpruceError<
 		super(code)
 		this.options = options
 
-		// Preserve the stack
 		if (options.originalError) {
 			if (options.originalError instanceof Error) {
 				this.stack = options.originalError.stack
 				this.originalError = options.originalError
-			} else if (typeof options.originalError === 'string') {
-				this.originalError = new Error(options.originalError)
+				//@ts-ignore
+			} else if (options.originalError.isJavascriptError) {
+				//@ts-ignore
+				this.originalError = new Error(options.originalError.message)
+				//@ts-ignore
+				this.originalError.name = options.originalError.name
+				//@ts-ignore
+				this.originalError.stack = options.originalError.stack
+				//@ts-ignore
+			} else if (options.originalError && options.originalError.options) {
+				this.originalError = new GenericOriginalError(
+					//@ts-ignore
+					options.originalError.options
+				)
 			}
 		}
 
 		this.message = this.friendlyMessage()
 	}
 
-	/** Get a nice, readable version of the error. subclasses extend this */
 	public friendlyMessage(): string {
 		return this.options.friendlyMessage || this.message
 	}
 
-	/** Spruce errors stringify into something serialize'able */
 	public toString() {
 		return this.toJson()
 	}
 
-	/** Turn this error into a json string */
+	private serializeOriginalError(options: T) {
+		let serializedOptions = { ...options }
+
+		if (
+			!(serializedOptions.originalError instanceof AbstractSpruceError) &&
+			serializedOptions.originalError instanceof Error
+		) {
+			serializedOptions.originalError = {
+				//@ts-ignore
+				isJavascriptError: true,
+				message: serializedOptions.originalError.message,
+				stack: serializedOptions.originalError.stack,
+				name: serializedOptions.originalError.name,
+			}
+		}
+		return serializedOptions
+	}
+
 	public toJson() {
 		return JSON.stringify({
 			options: {
-				...this.options,
+				...this.serializeOriginalError(this.options),
 				friendlyMessage: this.friendlyMessage(),
 			},
 			stack: this.stack,
@@ -71,3 +97,5 @@ export default abstract class AbstractSpruceError<
 		}
 	}
 }
+
+class GenericOriginalError extends AbstractSpruceError {}
