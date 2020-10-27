@@ -40,9 +40,9 @@
         "upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build && yarn test"
     },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^15.1.0",
+        "@rollup/plugin-commonjs": "^16.0.0",
         "@rollup/plugin-json": "^4.0.1",
-        "@rollup/plugin-node-resolve": "^9.0.0",
+        "@rollup/plugin-node-resolve": "^10.0.0",
         "@rollup/plugin-typescript": "^6.0.0",
         "@sprucelabs/semantic-release": "^4.0.6",
         "@sprucelabs/test": "^7.1.3",
