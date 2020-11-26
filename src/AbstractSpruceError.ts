@@ -1,11 +1,11 @@
-import { SpruceErrorOptions, ISpruceErrorOptions } from './error.types'
+import { ErrorOptions, SpruceErrorOptions } from './error.types'
 
 Error.stackTraceLimit = Infinity
 
 type MyInstanceType<T extends { prototype: any }> = T['prototype']
 
 export default abstract class AbstractSpruceError<
-	T extends ISpruceErrorOptions = SpruceErrorOptions
+	T extends ErrorOptions = SpruceErrorOptions
 > extends Error {
 	public options: T
 	public originalError?: Error

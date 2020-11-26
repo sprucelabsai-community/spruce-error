@@ -1,26 +1,26 @@
-export interface ISpruceErrorOptions {
+export interface ErrorOptions {
 	code: string
 	friendlyMessage?: string
 	originalError?: Error
 }
 
 export type SpruceErrorOptions =
-	| ISpruceErrorUnknownError
-	| ISpruceErrorMissingParameters
-	| ISpruceErrorInvalidParameters
+	| SpruceErrorUnknownError
+	| SpruceErrorMissingParameters
+	| SpruceErrorInvalidParameters
 
-export interface ISpruceErrorUnknownError extends ISpruceErrorOptions {
+export interface SpruceErrorUnknownError extends ErrorOptions {
 	/** * We aren't sure what happened */
 	code: 'UNKNOWN_ERROR'
 }
 
-export interface ISpruceErrorMissingParameters extends ISpruceErrorOptions {
+export interface SpruceErrorMissingParameters extends ErrorOptions {
 	/** * Something is missing */
 	code: 'MISSING_PARAMETERS'
 	parameters: string[]
 }
 
-export interface ISpruceErrorInvalidParameters extends ISpruceErrorOptions {
+export interface SpruceErrorInvalidParameters extends ErrorOptions {
 	/** * Some parameter is bad */
 	code: 'INVALID_PARAMETERS'
 	parameters: string[]
