@@ -1,3 +1,10 @@
+# [4.0.0](https://github.com/sprucelabsai/spruce-error/compare/v3.0.0...v4.0.0) (2020-11-26)
+
+
+### Breaking Changes
+
+* remove i's from interfaces ([4ce3e86](https://github.com/sprucelabsai/spruce-error/commit/4ce3e86))
+
 # [3.0.0](https://github.com/sprucelabsai/spruce-error/compare/v2.4.1...v3.0.0) (2020-11-11)
 
 
