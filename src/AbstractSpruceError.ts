@@ -70,13 +70,17 @@ export default abstract class AbstractSpruceError<
 	}
 
 	public toObject(): any {
-		return {
+		const obj: Record<string, any> = {
 			options: {
 				...this.serializeOriginalError(this.options),
 				friendlyMessage: this.friendlyMessage(),
 			},
-			stack: this.stack,
 		}
+		if (this.stack) {
+			obj.stack = this.stack
+		}
+
+		return obj
 	}
 
 	public static parse<T extends { prototype: any }>(
