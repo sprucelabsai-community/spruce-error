@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/sprucelabsai/spruce-error/compare/v4.0.6...v4.1.0) (2021-02-09)
+
+
+### Features
+
+* errors now have prettyPrint ([e7ad2e6](https://github.com/sprucelabsai/spruce-error/commit/e7ad2e6))
+
 ## [4.0.6](https://github.com/sprucelabsai/spruce-error/compare/v4.0.5...v4.0.6) (2021-01-26)
 
 ## [4.0.5](https://github.com/sprucelabsai/spruce-error/compare/v4.0.4...v4.0.5) (2021-01-20)
