@@ -9,6 +9,14 @@
     "version": "4.1.1",
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
+    "exports": {
+		".": {
+            "node": "./build/index.js",
+            "require": "./build/index.js",
+            "import": "./build/esm/index.js",
+			"default": "./build/esm/index.js"
+		}
+	},
     "description": "Error reporting that's really, really helpful. 💡",
     "keywords": [
         "node",
@@ -23,10 +31,10 @@
     "scripts": {
         "arkit": "arkit -f index.ts -o docs/images/arkit.svg",
         "arkit.png": "arkit -f index.ts -o docs/images/arkit.png",
-        "build": "yarn build.umd && yarn build.tsc",
+        "build": "yarn build.umd && yarn build.tsc && yarn build.dist",
         "build.tsc": "tsc",
         "build.types": "tsc --emitDeclarationOnly && echo PASS",
-        "build.browser": "tsc --project tsconfig.browser.json",
+        "build.dist": "tsc --project tsconfig.dist.json",
         "build.umd": "rollup -c rollup.config.js && mkdir -p build/umd && cd build && sed s/index.js.map/error.js.map/ index.js > umd/error.js && mv index.js.map umd/error.js.map",
         "clean": "rm -rf build/",
         "clean.all": "rm -rf build/ && rm -rf node_modules/",
@@ -75,7 +83,9 @@
             "<rootDir>/tmp/",
             "<rootDir>/src/",
             "<rootDir>/node_modules/",
-            "<rootDir>/build/__tests__/testDirsAndFiles/"
+            "<rootDir>/build/__tests__/testDirsAndFiles/",
+            "<rootDir>/build/esm/",
+            "<rootDir>/build/umd/"
         ],
         "testMatch": [
             "**/__tests__/**/*.test.js?(x)"
