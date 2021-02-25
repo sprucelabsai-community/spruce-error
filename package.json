@@ -3,10 +3,10 @@
     "publishConfig": {
         "access": "public"
     },
+    "version": "4.1.2",
     "files": [
         "build"
     ],
-    "version": "4.1.2",
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
     "exports": {
@@ -17,6 +17,7 @@
             "default": "./build/esm/index.js"
         }
     },
+    "module": "./build/esm/index.js",
     "description": "Error reporting that's really, really helpful. 💡",
     "keywords": [
         "node",
@@ -29,13 +30,10 @@
         "url": "https://github.com/sprucelabsai/spruce-error/issues"
     },
     "scripts": {
-        "arkit": "arkit -f index.ts -o docs/images/arkit.svg",
-        "arkit.png": "arkit -f index.ts -o docs/images/arkit.png",
-        "build": "yarn build.umd && yarn build.tsc && yarn build.dist",
+        "build": "yarn build.tsc && yarn build.dist",
+        "build.dist": "tsc --project tsconfig.dist.json",
         "build.tsc": "tsc",
         "build.types": "tsc --emitDeclarationOnly && echo PASS",
-        "build.dist": "tsc --project tsconfig.dist.json",
-        "build.umd": "rollup -c rollup.config.js && mkdir -p build/umd && cd build && sed s/index.js.map/error.js.map/ index.js > umd/error.js && mv index.js.map umd/error.js.map",
         "clean": "rm -rf build/",
         "clean.all": "rm -rf build/ && rm -rf node_modules/",
         "fix.lint": "eslint --fix '**/*.ts'",
@@ -50,15 +48,10 @@
         "watch.test": "jest --watch"
     },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^17.0.0",
-        "@rollup/plugin-json": "^4.0.1",
-        "@rollup/plugin-node-resolve": "^11.0.0",
-        "@rollup/plugin-typescript": "^8.0.0",
         "@sprucelabs/jest-json-reporter": "latest",
         "@sprucelabs/semantic-release": "latest",
         "@sprucelabs/test": "latest",
         "@types/faker": "^5.1.2",
-        "arkit": "^1.6.4",
         "chokidar-cli": "^2.1.0",
         "concurrently": "^5.3.0",
         "eslint": "^7.11.0",
@@ -66,10 +59,6 @@
         "jest": "^26.5.3",
         "jest-circus": "^26.6.3",
         "prettier": "^2.1.2",
-        "rollup": "^2.29.0",
-        "rollup-plugin-node-builtins": "^2.1.2",
-        "rollup-plugin-node-globals": "^1.4.0",
-        "rollup-plugin-replace": "^2.2.0",
         "ts-node": "^9.0.0",
         "typescript": "^4.0.3"
     },
@@ -84,8 +73,7 @@
             "<rootDir>/src/",
             "<rootDir>/node_modules/",
             "<rootDir>/build/__tests__/testDirsAndFiles/",
-            "<rootDir>/build/esm/",
-            "<rootDir>/build/umd/"
+            "<rootDir>/build/esm/"
         ],
         "testMatch": [
             "**/__tests__/**/*.test.js?(x)"
