@@ -31,7 +31,8 @@
     },
     "scripts": {
         "build": "yarn build.tsc && yarn build.dist",
-        "build.dist": "tsc --project tsconfig.dist.json",
+        "build.dist": "tsc --project tsconfig.dist.json && yarn build.esm-postbuild",
+        "build.esm-postbuild": "esm-postbuild --target build/esm --patterns '**/*.js'",
         "build.tsc": "tsc",
         "build.types": "tsc --emitDeclarationOnly && echo PASS",
         "clean": "rm -rf build/",
@@ -48,6 +49,7 @@
         "watch.test": "jest --watch"
     },
     "devDependencies": {
+        "@sprucelabs/esm-postbuild": "^1.0.0",
         "@sprucelabs/jest-json-reporter": "latest",
         "@sprucelabs/semantic-release": "latest",
         "@sprucelabs/test": "latest",
