@@ -26,6 +26,21 @@ export default class SpruceErrorTests {
 	}
 
 	@test()
+	protected errorPrettyPrintIncludesStack() {
+		const error = new SpruceError({
+			code: 'MISSING_PARAMETERS',
+			parameters: ['test'],
+			friendlyMessage: 'This has some message in it',
+		})
+
+		const pretty = error.prettyPrint()
+
+		assert.doesInclude(pretty, 'some message')
+		assert.doesInclude(pretty, 'test')
+		assert.doesInclude(pretty, 'Object.errorPrettyPrintIncludesStack')
+	}
+
+	@test()
 	protected errorToObjectWithoutStackHasNoStackProp() {
 		const error = new SpruceError({
 			code: 'MISSING_PARAMETERS',

@@ -1,3 +1,31 @@
+## [4.1.6](https://github.com/sprucelabsai/spruce-error/compare/v4.1.5...v4.1.6) (2021-03-02)
+
+## [4.1.5](https://github.com/sprucelabsai/spruce-error/compare/v4.1.4...v4.1.5) (2021-03-02)
+
+## [4.1.4](https://github.com/sprucelabsai/spruce-error/compare/v4.1.3...v4.1.4) (2021-02-25)
+
+## [4.1.3](https://github.com/sprucelabsai/spruce-error/compare/v4.1.2...v4.1.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* fixed target to es6 ([33e0dbd](https://github.com/sprucelabsai/spruce-error/commit/33e0dbd))
+
+## [4.1.2](https://github.com/sprucelabsai/spruce-error/compare/v4.1.1...v4.1.2) (2021-02-23)
+
+## [4.1.1](https://github.com/sprucelabsai/spruce-error/compare/v4.1.0...v4.1.1) (2021-02-09)
+
+# [4.1.0](https://github.com/sprucelabsai/spruce-error/compare/v4.0.6...v4.1.0) (2021-02-09)
+
+
+### Features
+
+* errors now have prettyPrint ([e7ad2e6](https://github.com/sprucelabsai/spruce-error/commit/e7ad2e6))
+
+## [4.0.6](https://github.com/sprucelabsai/spruce-error/compare/v4.0.5...v4.0.6) (2021-01-26)
+
+## [4.0.5](https://github.com/sprucelabsai/spruce-error/compare/v4.0.4...v4.0.5) (2021-01-20)
+
 ## [4.0.4](https://github.com/sprucelabsai/spruce-error/compare/v4.0.3...v4.0.4) (2020-12-31)
 
 ## [4.0.3](https://github.com/sprucelabsai/spruce-error/compare/v4.0.2...v4.0.3) (2020-12-28)

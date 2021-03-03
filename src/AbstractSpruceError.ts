@@ -83,6 +83,10 @@ export default abstract class AbstractSpruceError<
 		return obj
 	}
 
+	public prettyPrint() {
+		return this.message + '\n\n' + this.stack
+	}
+
 	public static parse<T extends { prototype: any }>(
 		json: string | Record<string, any>,
 		ClassRef: T
