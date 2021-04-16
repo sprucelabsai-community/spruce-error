@@ -17,7 +17,6 @@ export default abstract class AbstractSpruceError<
 
 		if (options.originalError) {
 			if (options.originalError instanceof Error) {
-				this.stack = options.originalError.stack
 				this.originalError = options.originalError
 				//@ts-ignore
 			} else if (options.originalError.isJavascriptError) {
