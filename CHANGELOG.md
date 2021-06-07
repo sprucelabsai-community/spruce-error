@@ -1,3 +1,5 @@
+## [4.1.12](https://github.com/sprucelabsai/spruce-error/compare/v4.1.11...v4.1.12) (2021-06-07)
+
 ## [4.1.11](https://github.com/sprucelabsai/spruce-error/compare/v4.1.10...v4.1.11) (2021-04-16)
 
 ## [4.1.10](https://github.com/sprucelabsai/spruce-error/compare/v4.1.9...v4.1.10) (2021-03-04)
