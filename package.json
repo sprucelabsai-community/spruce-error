@@ -31,7 +31,7 @@
         "clean": "rm -rf build/",
         "clean.all": "rm -rf build/ && rm -rf node_modules/",
         "fix.lint": "eslint --fix '**/*.ts'",
-        "lint": "eslint '**/*.ts'",
+        "lint": "eslint --cache '**/*.ts'",
         "test": "jest",
         "rebuild": "yarn clean.all && yarn && yarn build.dev",
         "release": "semantic-release",
