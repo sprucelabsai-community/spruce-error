@@ -3,7 +3,7 @@
     "publishConfig": {
         "access": "public"
     },
-    "version": "4.1.13",
+    "version": "4.1.14",
     "files": [
         "build"
     ],
@@ -29,15 +29,15 @@
         "build.esm-postbuild": "esm-postbuild --target build/esm --patterns '**/*.js'",
         "build.tsc": "tsc",
         "build.types": "tsc --emitDeclarationOnly && echo PASS",
-	"clean": "yarn clean.build",
-	"clean.all": "yarn clean.dependencies && yarn clean.build",
-	"clean.build": "rm -rf build/",
-	"clean.dependencies": "rm -rf node_modules/ package-lock.json yarn.lock",
+        "clean": "yarn clean.build",
+        "clean.all": "yarn clean.dependencies && yarn clean.build",
+        "clean.build": "rm -rf build/",
+        "clean.dependencies": "rm -rf node_modules/ package-lock.json yarn.lock",
         "fix.lint": "eslint --fix '**/*.ts'",
         "lint": "eslint --cache '**/*.ts'",
         "test": "jest",
         "rebuild": "yarn clean.all && yarn && yarn build.dev",
-	"rebuild.dependencies": "yarn clean.dependencies && yarn",
+        "rebuild.dependencies": "yarn clean.dependencies && yarn",
         "release": "semantic-release",
         "upgrade.packages": "yarn-upgrade-all && rm -f yarn.lock ; yarn ; yarn fix.lint | true",
         "upgrade.packages.all": "yarn install && yarn upgrade.packages",
