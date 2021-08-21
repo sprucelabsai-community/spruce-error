@@ -1,3 +1,10 @@
+# [5.0.0](https://github.com/sprucelabsai/spruce-error/compare/v4.1.16...v5.0.0) (2021-08-21)
+
+
+### Breaking Changes
+
+* removed export of error options since they are only for testing ([f833bca](https://github.com/sprucelabsai/spruce-error/commit/f833bca))
+
 ## [4.1.16](https://github.com/sprucelabsai/spruce-error/compare/v4.1.15...v4.1.16) (2021-07-30)
 
 ## [4.1.15](https://github.com/sprucelabsai/spruce-error/compare/v4.1.14...v4.1.15) (2021-06-21)
