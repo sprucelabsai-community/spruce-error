@@ -8,7 +8,9 @@
   "scriptUpdater": {
     "skipped": [
       "build.ci",
-      "build.dev"
+      "build.dev",
+      "build.resolve-paths",
+      "post.watch.build"
     ]
   }
 }
