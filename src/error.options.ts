@@ -11,7 +11,7 @@ export type SpruceErrorOptions =
 
 export interface SpruceErrorUnknownError extends ErrorOptions {
 	/** * We aren't sure what happened */
-	code: 'UNKNOW`N_ERROR'
+	code: 'UNKNOWN_ERROR'
 }
 
 export interface SpruceErrorMissingParameters extends ErrorOptions {
