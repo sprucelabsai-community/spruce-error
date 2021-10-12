@@ -65,7 +65,7 @@
   },
   "devDependencies": {
     "@sprucelabs/esm-postbuild": "^1.0.256",
-    "@sprucelabs/jest-json-reporter": "^6.0.197",
+    "@sprucelabs/jest-json-reporter": "^6.0.198",
     "@sprucelabs/semantic-release": "^4.0.7",
     "@sprucelabs/test": "^7.7.192",
     "chokidar-cli": "^3.0.0",
