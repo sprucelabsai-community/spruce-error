@@ -1,3 +1,207 @@
+## [5.0.240](https://github.com/sprucelabsai/spruce-error/compare/v5.0.239...v5.0.240) (2021-10-19)
+
+## [5.0.239](https://github.com/sprucelabsai/spruce-error/compare/v5.0.238...v5.0.239) (2021-10-19)
+
+## [5.0.238](https://github.com/sprucelabsai/spruce-error/compare/v5.0.237...v5.0.238) (2021-10-17)
+
+## [5.0.237](https://github.com/sprucelabsai/spruce-error/compare/v5.0.236...v5.0.237) (2021-10-17)
+
+## [5.0.236](https://github.com/sprucelabsai/spruce-error/compare/v5.0.235...v5.0.236) (2021-10-17)
+
+## [5.0.235](https://github.com/sprucelabsai/spruce-error/compare/v5.0.234...v5.0.235) (2021-10-17)
+
+## [5.0.234](https://github.com/sprucelabsai/spruce-error/compare/v5.0.233...v5.0.234) (2021-10-17)
+
+## [5.0.233](https://github.com/sprucelabsai/spruce-error/compare/v5.0.232...v5.0.233) (2021-10-16)
+
+## [5.0.232](https://github.com/sprucelabsai/spruce-error/compare/v5.0.231...v5.0.232) (2021-10-14)
+
+## [5.0.231](https://github.com/sprucelabsai/spruce-error/compare/v5.0.230...v5.0.231) (2021-10-14)
+
+## [5.0.230](https://github.com/sprucelabsai/spruce-error/compare/v5.0.229...v5.0.230) (2021-10-14)
+
+## [5.0.229](https://github.com/sprucelabsai/spruce-error/compare/v5.0.228...v5.0.229) (2021-10-14)
+
+## [5.0.228](https://github.com/sprucelabsai/spruce-error/compare/v5.0.227...v5.0.228) (2021-10-14)
+
+## [5.0.227](https://github.com/sprucelabsai/spruce-error/compare/v5.0.226...v5.0.227) (2021-10-13)
+
+## [5.0.226](https://github.com/sprucelabsai/spruce-error/compare/v5.0.225...v5.0.226) (2021-10-13)
+
+## [5.0.225](https://github.com/sprucelabsai/spruce-error/compare/v5.0.224...v5.0.225) (2021-10-13)
+
+## [5.0.224](https://github.com/sprucelabsai/spruce-error/compare/v5.0.223...v5.0.224) (2021-10-13)
+
+## [5.0.223](https://github.com/sprucelabsai/spruce-error/compare/v5.0.222...v5.0.223) (2021-10-13)
+
+## [5.0.222](https://github.com/sprucelabsai/spruce-error/compare/v5.0.221...v5.0.222) (2021-10-12)
+
+## [5.0.221](https://github.com/sprucelabsai/spruce-error/compare/v5.0.220...v5.0.221) (2021-10-12)
+
+## [5.0.220](https://github.com/sprucelabsai/spruce-error/compare/v5.0.219...v5.0.220) (2021-10-12)
+
+## [5.0.219](https://github.com/sprucelabsai/spruce-error/compare/v5.0.218...v5.0.219) (2021-10-12)
+
+## [5.0.218](https://github.com/sprucelabsai/spruce-error/compare/v5.0.217...v5.0.218) (2021-10-12)
+
+## [5.0.217](https://github.com/sprucelabsai/spruce-error/compare/v5.0.216...v5.0.217) (2021-10-12)
+
+## [5.0.216](https://github.com/sprucelabsai/spruce-error/compare/v5.0.215...v5.0.216) (2021-10-12)
+
+## [5.0.215](https://github.com/sprucelabsai/spruce-error/compare/v5.0.214...v5.0.215) (2021-10-08)
+
+## [5.0.214](https://github.com/sprucelabsai/spruce-error/compare/v5.0.213...v5.0.214) (2021-10-08)
+
+## [5.0.213](https://github.com/sprucelabsai/spruce-error/compare/v5.0.212...v5.0.213) (2021-10-08)
+
+## [5.0.212](https://github.com/sprucelabsai/spruce-error/compare/v5.0.211...v5.0.212) (2021-10-08)
+
+## [5.0.211](https://github.com/sprucelabsai/spruce-error/compare/v5.0.210...v5.0.211) (2021-10-05)
+
+## [5.0.210](https://github.com/sprucelabsai/spruce-error/compare/v5.0.209...v5.0.210) (2021-10-05)
+
+## [5.0.209](https://github.com/sprucelabsai/spruce-error/compare/v5.0.208...v5.0.209) (2021-10-04)
+
+## [5.0.208](https://github.com/sprucelabsai/spruce-error/compare/v5.0.207...v5.0.208) (2021-10-04)
+
+## [5.0.207](https://github.com/sprucelabsai/spruce-error/compare/v5.0.206...v5.0.207) (2021-10-04)
+
+## [5.0.206](https://github.com/sprucelabsai/spruce-error/compare/v5.0.205...v5.0.206) (2021-10-04)
+
+## [5.0.205](https://github.com/sprucelabsai/spruce-error/compare/v5.0.204...v5.0.205) (2021-10-04)
+
+## [5.0.204](https://github.com/sprucelabsai/spruce-error/compare/v5.0.203...v5.0.204) (2021-10-04)
+
+## [5.0.203](https://github.com/sprucelabsai/spruce-error/compare/v5.0.202...v5.0.203) (2021-10-04)
+
+## [5.0.202](https://github.com/sprucelabsai/spruce-error/compare/v5.0.201...v5.0.202) (2021-10-04)
+
+## [5.0.201](https://github.com/sprucelabsai/spruce-error/compare/v5.0.200...v5.0.201) (2021-10-04)
+
+## [5.0.200](https://github.com/sprucelabsai/spruce-error/compare/v5.0.199...v5.0.200) (2021-10-04)
+
+## [5.0.199](https://github.com/sprucelabsai/spruce-error/compare/v5.0.198...v5.0.199) (2021-10-04)
+
+## [5.0.198](https://github.com/sprucelabsai/spruce-error/compare/v5.0.197...v5.0.198) (2021-10-04)
+
+## [5.0.197](https://github.com/sprucelabsai/spruce-error/compare/v5.0.196...v5.0.197) (2021-10-04)
+
+## [5.0.196](https://github.com/sprucelabsai/spruce-error/compare/v5.0.195...v5.0.196) (2021-10-04)
+
+## [5.0.195](https://github.com/sprucelabsai/spruce-error/compare/v5.0.194...v5.0.195) (2021-10-04)
+
+## [5.0.194](https://github.com/sprucelabsai/spruce-error/compare/v5.0.193...v5.0.194) (2021-10-03)
+
+## [5.0.193](https://github.com/sprucelabsai/spruce-error/compare/v5.0.192...v5.0.193) (2021-10-03)
+
+## [5.0.192](https://github.com/sprucelabsai/spruce-error/compare/v5.0.191...v5.0.192) (2021-10-03)
+
+## [5.0.191](https://github.com/sprucelabsai/spruce-error/compare/v5.0.190...v5.0.191) (2021-10-03)
+
+## [5.0.190](https://github.com/sprucelabsai/spruce-error/compare/v5.0.189...v5.0.190) (2021-10-03)
+
+## [5.0.189](https://github.com/sprucelabsai/spruce-error/compare/v5.0.188...v5.0.189) (2021-10-03)
+
+## [5.0.188](https://github.com/sprucelabsai/spruce-error/compare/v5.0.187...v5.0.188) (2021-10-03)
+
+## [5.0.187](https://github.com/sprucelabsai/spruce-error/compare/v5.0.186...v5.0.187) (2021-10-03)
+
+## [5.0.186](https://github.com/sprucelabsai/spruce-error/compare/v5.0.185...v5.0.186) (2021-10-03)
+
+## [5.0.185](https://github.com/sprucelabsai/spruce-error/compare/v5.0.184...v5.0.185) (2021-10-03)
+
+## [5.0.184](https://github.com/sprucelabsai/spruce-error/compare/v5.0.183...v5.0.184) (2021-10-03)
+
+## [5.0.183](https://github.com/sprucelabsai/spruce-error/compare/v5.0.182...v5.0.183) (2021-10-03)
+
+## [5.0.182](https://github.com/sprucelabsai/spruce-error/compare/v5.0.181...v5.0.182) (2021-10-03)
+
+## [5.0.181](https://github.com/sprucelabsai/spruce-error/compare/v5.0.180...v5.0.181) (2021-10-03)
+
+## [5.0.180](https://github.com/sprucelabsai/spruce-error/compare/v5.0.179...v5.0.180) (2021-10-03)
+
+## [5.0.179](https://github.com/sprucelabsai/spruce-error/compare/v5.0.178...v5.0.179) (2021-10-03)
+
+## [5.0.178](https://github.com/sprucelabsai/spruce-error/compare/v5.0.177...v5.0.178) (2021-10-03)
+
+## [5.0.177](https://github.com/sprucelabsai/spruce-error/compare/v5.0.176...v5.0.177) (2021-10-03)
+
+## [5.0.176](https://github.com/sprucelabsai/spruce-error/compare/v5.0.175...v5.0.176) (2021-10-03)
+
+## [5.0.175](https://github.com/sprucelabsai/spruce-error/compare/v5.0.174...v5.0.175) (2021-10-03)
+
+## [5.0.174](https://github.com/sprucelabsai/spruce-error/compare/v5.0.173...v5.0.174) (2021-10-03)
+
+## [5.0.173](https://github.com/sprucelabsai/spruce-error/compare/v5.0.172...v5.0.173) (2021-10-03)
+
+## [5.0.172](https://github.com/sprucelabsai/spruce-error/compare/v5.0.171...v5.0.172) (2021-10-03)
+
+## [5.0.171](https://github.com/sprucelabsai/spruce-error/compare/v5.0.170...v5.0.171) (2021-10-03)
+
+## [5.0.170](https://github.com/sprucelabsai/spruce-error/compare/v5.0.169...v5.0.170) (2021-10-02)
+
+## [5.0.169](https://github.com/sprucelabsai/spruce-error/compare/v5.0.168...v5.0.169) (2021-10-02)
+
+## [5.0.168](https://github.com/sprucelabsai/spruce-error/compare/v5.0.167...v5.0.168) (2021-10-02)
+
+## [5.0.167](https://github.com/sprucelabsai/spruce-error/compare/v5.0.166...v5.0.167) (2021-10-02)
+
+## [5.0.166](https://github.com/sprucelabsai/spruce-error/compare/v5.0.165...v5.0.166) (2021-10-02)
+
+## [5.0.165](https://github.com/sprucelabsai/spruce-error/compare/v5.0.164...v5.0.165) (2021-10-02)
+
+## [5.0.164](https://github.com/sprucelabsai/spruce-error/compare/v5.0.163...v5.0.164) (2021-10-02)
+
+## [5.0.163](https://github.com/sprucelabsai/spruce-error/compare/v5.0.162...v5.0.163) (2021-10-02)
+
+## [5.0.162](https://github.com/sprucelabsai/spruce-error/compare/v5.0.161...v5.0.162) (2021-10-02)
+
+## [5.0.161](https://github.com/sprucelabsai/spruce-error/compare/v5.0.160...v5.0.161) (2021-10-02)
+
+## [5.0.160](https://github.com/sprucelabsai/spruce-error/compare/v5.0.159...v5.0.160) (2021-10-02)
+
+## [5.0.159](https://github.com/sprucelabsai/spruce-error/compare/v5.0.158...v5.0.159) (2021-10-02)
+
+## [5.0.158](https://github.com/sprucelabsai/spruce-error/compare/v5.0.157...v5.0.158) (2021-10-02)
+
+## [5.0.157](https://github.com/sprucelabsai/spruce-error/compare/v5.0.156...v5.0.157) (2021-10-02)
+
+## [5.0.156](https://github.com/sprucelabsai/spruce-error/compare/v5.0.155...v5.0.156) (2021-10-02)
+
+## [5.0.155](https://github.com/sprucelabsai/spruce-error/compare/v5.0.154...v5.0.155) (2021-10-02)
+
+## [5.0.154](https://github.com/sprucelabsai/spruce-error/compare/v5.0.153...v5.0.154) (2021-10-02)
+
+## [5.0.153](https://github.com/sprucelabsai/spruce-error/compare/v5.0.152...v5.0.153) (2021-10-02)
+
+## [5.0.152](https://github.com/sprucelabsai/spruce-error/compare/v5.0.151...v5.0.152) (2021-10-02)
+
+## [5.0.151](https://github.com/sprucelabsai/spruce-error/compare/v5.0.150...v5.0.151) (2021-10-02)
+
+## [5.0.150](https://github.com/sprucelabsai/spruce-error/compare/v5.0.149...v5.0.150) (2021-10-02)
+
+## [5.0.149](https://github.com/sprucelabsai/spruce-error/compare/v5.0.148...v5.0.149) (2021-10-02)
+
+## [5.0.148](https://github.com/sprucelabsai/spruce-error/compare/v5.0.147...v5.0.148) (2021-10-02)
+
+## [5.0.147](https://github.com/sprucelabsai/spruce-error/compare/v5.0.146...v5.0.147) (2021-10-02)
+
+## [5.0.146](https://github.com/sprucelabsai/spruce-error/compare/v5.0.145...v5.0.146) (2021-10-01)
+
+## [5.0.145](https://github.com/sprucelabsai/spruce-error/compare/v5.0.144...v5.0.145) (2021-10-01)
+
+## [5.0.144](https://github.com/sprucelabsai/spruce-error/compare/v5.0.143...v5.0.144) (2021-10-01)
+
+## [5.0.143](https://github.com/sprucelabsai/spruce-error/compare/v5.0.142...v5.0.143) (2021-10-01)
+
+## [5.0.142](https://github.com/sprucelabsai/spruce-error/compare/v5.0.141...v5.0.142) (2021-10-01)
+
+## [5.0.141](https://github.com/sprucelabsai/spruce-error/compare/v5.0.140...v5.0.141) (2021-10-01)
+
+## [5.0.140](https://github.com/sprucelabsai/spruce-error/compare/v5.0.139...v5.0.140) (2021-10-01)
+
+## [5.0.139](https://github.com/sprucelabsai/spruce-error/compare/v5.0.138...v5.0.139) (2021-10-01)
+
 ## [5.0.138](https://github.com/sprucelabsai/spruce-error/compare/v5.0.137...v5.0.138) (2021-10-01)
 
 ## [5.0.137](https://github.com/sprucelabsai/spruce-error/compare/v5.0.136...v5.0.137) (2021-10-01)
