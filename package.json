@@ -64,7 +64,7 @@
     "watch.tsc": "tsc -w"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "^1.0.268",
+    "@sprucelabs/esm-postbuild": "^1.0.269",
     "@sprucelabs/jest-json-reporter": "^6.0.215",
     "@sprucelabs/semantic-release": "^4.0.8",
     "@sprucelabs/test": "^7.7.203",
