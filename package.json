@@ -64,10 +64,10 @@
     "watch.tsc": "tsc -w"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "^1.0.276",
-    "@sprucelabs/jest-json-reporter": "^6.0.226",
+    "@sprucelabs/esm-postbuild": "^1.0.277",
+    "@sprucelabs/jest-json-reporter": "^6.0.227",
     "@sprucelabs/semantic-release": "^4.0.8",
-    "@sprucelabs/test": "^7.7.213",
+    "@sprucelabs/test": "^7.7.214",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^6.3.0",
     "eslint": "^8.1.0",
