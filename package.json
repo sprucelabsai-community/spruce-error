@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "5.0.292",
+  "version": "5.0.303",
   "skill": {
     "namespace": "spruce-error",
     "upgradeIgnoreList": [
@@ -64,17 +64,17 @@
     "watch.tsc": "tsc -w"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "^1.0.287",
-    "@sprucelabs/jest-json-reporter": "^6.0.248",
+    "@sprucelabs/esm-postbuild": "^1.0.291",
+    "@sprucelabs/jest-json-reporter": "^6.0.254",
     "@sprucelabs/semantic-release": "^4.0.8",
-    "@sprucelabs/test": "^7.7.231",
+    "@sprucelabs/test": "^7.7.237",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^6.4.0",
     "eslint": "^8.3.0",
-    "eslint-config-spruce": "^10.10.15",
+    "eslint-config-spruce": "^10.10.16",
     "jest": "^27.3.1",
     "jest-circus": "^27.3.1",
-    "prettier": "^2.4.1",
+    "prettier": "^2.5.0",
     "tsc-watch": "^4.5.0",
     "typescript": "^4.5.2"
   },

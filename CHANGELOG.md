@@ -1,3 +1,25 @@
+## [5.0.303](https://github.com/sprucelabsai/spruce-error/compare/v5.0.302...v5.0.303) (2021-11-26)
+
+## [5.0.302](https://github.com/sprucelabsai/spruce-error/compare/v5.0.301...v5.0.302) (2021-11-26)
+
+## [5.0.301](https://github.com/sprucelabsai/spruce-error/compare/v5.0.300...v5.0.301) (2021-11-26)
+
+## [5.0.300](https://github.com/sprucelabsai/spruce-error/compare/v5.0.299...v5.0.300) (2021-11-26)
+
+## [5.0.299](https://github.com/sprucelabsai/spruce-error/compare/v5.0.298...v5.0.299) (2021-11-25)
+
+## [5.0.298](https://github.com/sprucelabsai/spruce-error/compare/v5.0.297...v5.0.298) (2021-11-25)
+
+## [5.0.297](https://github.com/sprucelabsai/spruce-error/compare/v5.0.296...v5.0.297) (2021-11-25)
+
+## [5.0.296](https://github.com/sprucelabsai/spruce-error/compare/v5.0.295...v5.0.296) (2021-11-25)
+
+## [5.0.295](https://github.com/sprucelabsai/spruce-error/compare/v5.0.294...v5.0.295) (2021-11-25)
+
+## [5.0.294](https://github.com/sprucelabsai/spruce-error/compare/v5.0.293...v5.0.294) (2021-11-25)
+
+## [5.0.293](https://github.com/sprucelabsai/spruce-error/compare/v5.0.292...v5.0.293) (2021-11-25)
+
 ## [5.0.292](https://github.com/sprucelabsai/spruce-error/compare/v5.0.291...v5.0.292) (2021-11-25)
 
 ## [5.0.291](https://github.com/sprucelabsai/spruce-error/compare/v5.0.290...v5.0.291) (2021-11-23)
