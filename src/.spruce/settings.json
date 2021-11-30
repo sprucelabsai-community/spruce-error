@@ -12,5 +12,10 @@
       "build.resolve-paths",
       "post.watch.build"
     ]
+  },
+  "writer": {
+    "skipped": [
+      "tsconfig.json"
+    ]
   }
 }
