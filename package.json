@@ -64,7 +64,7 @@
     "watch.tsc": "tsc -w"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "^1.0.293",
+    "@sprucelabs/esm-postbuild": "^1.0.294",
     "@sprucelabs/jest-json-reporter": "^6.0.259",
     "@sprucelabs/semantic-release": "^4.0.8",
     "@sprucelabs/test": "^7.7.242",
@@ -72,7 +72,7 @@
     "concurrently": "^6.4.0",
     "eslint": "^8.3.0",
     "eslint-config-spruce": "^10.10.16",
-    "jest": "^27.4.2",
+    "jest": "^27.4.3",
     "jest-circus": "^27.4.2",
     "prettier": "^2.5.0",
     "tsc-watch": "^4.5.0",
