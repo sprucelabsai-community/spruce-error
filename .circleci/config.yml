@@ -1,8 +1,6 @@
 version: 2.1
 orbs:
-  hub: yasuhiroki/hub@0.0.2
-  jq: circleci/jq@2.2.0
-  spruce: sprucelabsai/orb@1.0.0
+  spruce: sprucelabsai/orb@1
 jobs:
   test:
     docker:
@@ -33,6 +31,7 @@ jobs:
   upgrade:
     docker:
       - image: circleci/node:16
+    working_directory: /mnt/ramdisk
     steps:
       - spruce/check_for_autoupgrade_dns
       - add_ssh_keys:
@@ -41,8 +40,6 @@ jobs:
       - spruce/check_for_ssh_keys_env
       - spruce/setup_ct_npm_cache
       - checkout
-      - hub/install
-      - jq/install
       - spruce/set_target_branch_env
       - spruce/install_rsync
       - spruce/install_cli
