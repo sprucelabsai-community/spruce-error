@@ -34,7 +34,6 @@ jobs:
     docker:
       - image: circleci/node:16
     steps:
-      - run:
       - spruce/check_for_autoupgrade_dns
       - add_ssh_keys:
           fingerprints:
