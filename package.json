@@ -8,6 +8,7 @@
     "namespace": "spruce-error",
     "upgradeIgnoreList": [
       "@sprucelabs/esm-postbuild",
+      "@sprucelabs/jest-json-reporter",
       "@sprucelabs/resolve-path-aliases",
       "@sprucelabs/spruce-test-fixtures",
       "@sprucelabs/test-utils",
