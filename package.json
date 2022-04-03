@@ -70,7 +70,7 @@
     "@sprucelabs/esm-postbuild": "^1.0.304",
     "@sprucelabs/jest-json-reporter": "^6.0.341",
     "@sprucelabs/semantic-release": "^4.0.8",
-    "@sprucelabs/test": "^7.7.299",
+    "@sprucelabs/test": "^7.7.300",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^7.1.0",
     "eslint": "^8.12.0",
@@ -78,7 +78,7 @@
     "jest": "^27.5.1",
     "jest-circus": "^27.5.1",
     "prettier": "^2.6.2",
-    "tsc-watch": "^4.6.2",
+    "tsc-watch": "^5.0.2",
     "typescript": "^4.6.3"
   },
   "peerDependencies": {},
