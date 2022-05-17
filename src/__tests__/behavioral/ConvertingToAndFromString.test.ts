@@ -89,7 +89,7 @@ export default class ConvertingToAndFromStringTest extends AbstractSpruceTest {
 		assert.isEqual(parsedError.message, 'go team!')
 	}
 
-	@test.only()
+	@test()
 	protected static errorMessagesAreRetainedOnStandardErrors() {
 		const message = 'a fancy message -' + new Date().getTime()
 		const err = new Error(message)
