@@ -29,9 +29,7 @@ export default class ConvertingToAndFromStringTest extends AbstractSpruceTest {
 		})
 
 		const expectedStack = error.stack
-		const object = error.toObject()
-
-		const parsedError = AbstractSpruceError.parse(object, SpruceError)
+		const parsedError = this.toStringAndBack(error)
 
 		assert.isEqual(parsedError.options.code, error.options.code)
 		assert.isEqualDeep(parsedError.stack, expectedStack)
@@ -55,8 +53,7 @@ export default class ConvertingToAndFromStringTest extends AbstractSpruceTest {
 			}),
 		})
 
-		const string = error.toString()
-		const parsedError = AbstractSpruceError.parse(string, SpruceError)
+		const parsedError = this.toStringAndBack(error)
 		assert.isTruthy(parsedError.originalError instanceof AbstractSpruceError)
 		assert.isEqual(
 			//@ts-ignore
@@ -75,9 +72,37 @@ export default class ConvertingToAndFromStringTest extends AbstractSpruceTest {
 			originalError: new Error('Bell'),
 		})
 
-		const string = error.toString()
-		const parsedError = AbstractSpruceError.parse(string, SpruceError)
+		const parsedError = this.toStringAndBack(error)
 		assert.isTruthy(parsedError.originalError instanceof Error)
 		assert.isEqual(parsedError.originalError?.message, 'Bell')
+	}
+
+	@test()
+	protected static errorMessagesAreRetainedOnSpruceErrors() {
+		const err = new SpruceError({
+			code: 'INVALID_PARAMETERS',
+			parameters: ['test'],
+		})
+
+		err.message = 'go team!'
+		const parsedError = AbstractSpruceError.parse(err, SpruceError)
+		assert.isEqual(parsedError.message, 'go team!')
+	}
+
+	@test.only()
+	protected static errorMessagesAreRetainedOnStandardErrors() {
+		const message = 'a fancy message -' + new Date().getTime()
+		const err = new Error(message)
+		const parsedError = AbstractSpruceError.parse(err, SpruceError)
+		assert.isEqual(parsedError.options.code, 'UNKNOWN_ERROR')
+		assert.isEqual(parsedError.message, message)
+		assert.isEqual(parsedError.originalError, err)
+		assert.isEqual(parsedError.stack, err.stack)
+	}
+
+	private static toStringAndBack(error: SpruceError) {
+		const string = error.toString()
+		const parsedError = AbstractSpruceError.parse(string, SpruceError)
+		return parsedError
 	}
 }

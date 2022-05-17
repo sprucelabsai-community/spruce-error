@@ -87,9 +87,24 @@ export default abstract class AbstractSpruceError<
 	}
 
 	public static parse<T extends { prototype: any }>(
-		json: string | Record<string, any>,
+		json: string | Record<string, any> | Error | AbstractSpruceError,
 		ClassRef: T
 	): MyInstanceType<T> {
+		if (json instanceof AbstractSpruceError) {
+			return json
+		}
+		if (json instanceof Error) {
+			//@ts-ignore
+			const err = new ClassRef({
+				code: 'UNKNOWN_ERROR',
+				friendlyMessage: json.message,
+				originalError: json,
+			})
+			err.stack = json.stack
+
+			return err
+		}
+
 		try {
 			const { options, stack } =
 				typeof json === 'string' ? JSON.parse(json) : json
