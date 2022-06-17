@@ -73,7 +73,7 @@
     "@sprucelabs/test": "^7.7.328",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^7.2.2",
-    "eslint": "^8.17.0",
+    "eslint": "^8.18.0",
     "eslint-config-spruce": "^10.11.2",
     "jest": "^28.1.1",
     "jest-circus": "^28.1.1",
