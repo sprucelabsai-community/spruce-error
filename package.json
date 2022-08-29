@@ -13,8 +13,7 @@
       "@sprucelabs/spruce-test-fixtures",
       "@sprucelabs/test-utils",
       "@types/node",
-      "ts-node",
-      "typescript"
+      "ts-node"
     ]
   },
   "files": [
