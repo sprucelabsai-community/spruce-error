@@ -1,11 +1,10 @@
 {
     "version": "2.0.0",
-    "tasks": [
         {
             "type": "npm",
             "script": "watch.build.dev",
             "group": "build",
-            "label": "watch.build.dev",
+            "label": "watch.build.dev & problem.watcher",
             "isBackground": true,
             "runOptions": {
                 "runOn": "folderOpen"
@@ -14,7 +13,11 @@
             "presentation": {
                 "panel": "dedicated",
                 "focus": false,
-                "reveal": "silent"
+                "reveal": "never"
+            },
+            "problemMatcher": {
+                "base": "$tsc-watch",
+                "applyTo": "allDocuments"
             }
         },
         {
