@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "5.0.575",
+  "version": "5.0.576",
   "skill": {
     "namespace": "spruce-error",
     "upgradeIgnoreList": [
