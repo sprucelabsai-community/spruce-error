@@ -70,7 +70,7 @@
     "@sprucelabs/esm-postbuild": "^2.0.22",
     "@sprucelabs/jest-json-reporter": "^6.0.512",
     "@sprucelabs/semantic-release": "^4.0.8",
-    "@sprucelabs/test": "^7.7.435",
+    "@sprucelabs/test": "^7.7.436",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^8.0.1",
     "eslint": "^8.37.0",
