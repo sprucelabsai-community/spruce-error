@@ -66,4 +66,15 @@ export default class SpruceErrorTests {
 		const obj = error.toObject()
 		assert.isFalse('stack' in obj)
 	}
+
+	@test('stack includes options 1', { test: 'true' })
+	@test('stack includes options 2', { cheesey: 'crunch' })
+	protected static async stackIncludesOptions(options: any) {
+		const error = new SpruceError({
+			code: 'UNKNOWN_ERROR',
+			...options,
+		})
+
+		assert.doesInclude(error.stack, JSON.stringify(options, null, 2))
+	}
 }

@@ -36,6 +36,15 @@ export default abstract class AbstractSpruceError<
 		}
 
 		this.message = this.friendlyMessage()
+		const optionsWithoutCode = { ...options }
+		//@ts-ignore
+		delete optionsWithoutCode.code
+
+		this.stack =
+			'Options: ' +
+			JSON.stringify(optionsWithoutCode, null, 2) +
+			'\n\n' +
+			this.stack
 	}
 
 	public friendlyMessage(): string {
