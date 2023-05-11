@@ -77,4 +77,15 @@ export default class SpruceErrorTests {
 
 		assert.doesInclude(error.stack, JSON.stringify(options, null, 2))
 	}
+
+	@test()
+	protected static async stackDoesNotIncludeOriginalError() {
+		const error = new SpruceError({
+			code: 'UNKNOWN_ERROR',
+			//@ts-ignore
+			originalError: 'taco',
+		})
+
+		assert.doesNotInclude(error.stack, 'taco')
+	}
 }

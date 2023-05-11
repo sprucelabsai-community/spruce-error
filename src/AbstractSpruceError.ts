@@ -39,6 +39,7 @@ export default abstract class AbstractSpruceError<
 		const optionsWithoutCode = { ...options }
 		//@ts-ignore
 		delete optionsWithoutCode.code
+		delete optionsWithoutCode.originalError
 
 		this.stack =
 			'Options: ' +
