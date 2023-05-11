@@ -1,3 +1,10 @@
+# [5.1.0](https://github.com/sprucelabsai-community/spruce-error/compare/v5.0.608...v5.1.0) (2023-05-11)
+
+
+### Features
+
+* errors now print their options in the stack! ([e452813](https://github.com/sprucelabsai-community/spruce-error/commit/e452813))
+
 ## [5.0.608](https://github.com/sprucelabsai-community/spruce-error/compare/v5.0.607...v5.0.608) (2023-05-05)
 
 ## [5.0.607](https://github.com/sprucelabsai-community/spruce-error/compare/v5.0.606...v5.0.607) (2023-05-01)
