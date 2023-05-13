@@ -42,10 +42,7 @@ export default abstract class AbstractSpruceError<
 		delete optionsWithoutCode.originalError
 
 		this.stack =
-			'Options: ' +
-			JSON.stringify(optionsWithoutCode, null, 2) +
-			'\n\n' +
-			this.stack
+			this.stack + '\n\nOptions: ' + JSON.stringify(optionsWithoutCode, null, 2)
 	}
 
 	public friendlyMessage(): string {
