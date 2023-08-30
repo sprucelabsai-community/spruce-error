@@ -5,7 +5,7 @@ Error.stackTraceLimit = Infinity
 type MyInstanceType<T extends { prototype: any }> = T['prototype']
 
 export default abstract class AbstractSpruceError<
-	T extends ErrorOptions = SpruceErrorOptions
+	T extends ErrorOptions = SpruceErrorOptions,
 > extends Error {
 	public options: T
 	public originalError?: Error
