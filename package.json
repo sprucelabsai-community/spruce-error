@@ -7,7 +7,6 @@
   "skill": {
     "namespace": "spruce-error",
     "upgradeIgnoreList": [
-      "@sprucelabs/esm-postbuild",
       "@sprucelabs/jest-json-reporter",
       "@sprucelabs/resolve-path-aliases",
       "@sprucelabs/spruce-test-fixtures",
@@ -67,8 +66,7 @@
     "watch.tsc": "tsc -w"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "^2.0.22",
-    "@sprucelabs/jest-json-reporter": "^6.0.512",
+    "@sprucelabs/esm-postbuild": "^5.0.163",
     "@sprucelabs/semantic-release": "^4.0.8",
     "@sprucelabs/test": "^8.0.42",
     "chokidar-cli": "^3.0.0",
