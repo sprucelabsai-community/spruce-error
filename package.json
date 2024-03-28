@@ -68,7 +68,7 @@
   "devDependencies": {
     "@sprucelabs/esm-postbuild": "^5.0.183",
     "@sprucelabs/semantic-release": "^4.0.8",
-    "@sprucelabs/test": "^8.0.47",
+    "@sprucelabs/test": "^8.0.48",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^8.2.2",
     "eslint": "^8.57.0",

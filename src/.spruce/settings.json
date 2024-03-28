@@ -15,7 +15,8 @@
   },
   "writer": {
     "skipped": [
-      ".nvmrc"
+      ".nvmrc",
+      ".gitignore"
     ]
   }
 }
