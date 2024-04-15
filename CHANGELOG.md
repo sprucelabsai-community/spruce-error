@@ -1,3 +1,10 @@
+# [6.0.0](https://github.com/sprucelabsai-community/spruce-error/compare/v5.1.108...v6.0.0) (2024-04-15)
+
+
+### Breaking Changes
+
+* upgrade ([b55abdd](https://github.com/sprucelabsai-community/spruce-error/commit/b55abdd))
+
 ## [5.1.108](https://github.com/sprucelabsai-community/spruce-error/compare/v5.1.107...v5.1.108) (2024-04-05)
 
 ## [5.1.107](https://github.com/sprucelabsai-community/spruce-error/compare/v5.1.106...v5.1.107) (2024-04-04)
