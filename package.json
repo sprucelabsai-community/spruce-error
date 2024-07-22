@@ -62,9 +62,9 @@
     "watch.tsc": "tsc -w"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "^6.0.151",
+    "@sprucelabs/esm-postbuild": "^6.0.152",
     "@sprucelabs/semantic-release": "^5.0.2",
-    "@sprucelabs/test": "^9.0.38",
+    "@sprucelabs/test": "^9.0.39",
     "chokidar-cli": "^3.0.0",
     "eslint": "^9.7.0",
     "eslint-config-spruce": "^11.2.26",
@@ -72,7 +72,7 @@
     "jest-circus": "^29.7.0",
     "prettier": "^3.3.3",
     "tsc-watch": "^6.2.0",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   },
   "peerDependencies": {},
   "dependencies": {},
