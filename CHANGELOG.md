@@ -1,3 +1,5 @@
+## [6.0.501](https://github.com/sprucelabsai-community/spruce-error/compare/v6.0.500...v6.0.501) (2024-10-21)
+
 ## [6.0.500](https://github.com/sprucelabsai-community/spruce-error/compare/v6.0.499...v6.0.500) (2024-10-21)
 
 ## [6.0.499](https://github.com/sprucelabsai-community/spruce-error/compare/v6.0.498...v6.0.499) (2024-10-20)
