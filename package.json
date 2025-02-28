@@ -64,7 +64,7 @@
   "devDependencies": {
     "@sprucelabs/esm-postbuild": "^6.0.550",
     "@sprucelabs/semantic-release": "^5.0.2",
-    "@sprucelabs/test": "^9.0.73",
+    "@sprucelabs/test": "^9.0.74",
     "chokidar-cli": "^3.0.0",
     "eslint": "^9.21.0",
     "eslint-config-spruce": "^11.2.26",
@@ -72,7 +72,7 @@
     "jest-circus": "^29.7.0",
     "prettier": "^3.5.2",
     "tsc-watch": "^6.2.1",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.2"
   },
   "peerDependencies": {},
   "dependencies": {},
