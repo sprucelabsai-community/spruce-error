@@ -1,3 +1,10 @@
+# [7.0.0](https://github.com/sprucelabsai-community/spruce-error/compare/v6.0.607...v7.0.0) (2025-06-10)
+
+
+### Breaking Changes
+
+* jest upgrade ([9e07dc5](https://github.com/sprucelabsai-community/spruce-error/commit/9e07dc5))
+
 ## [6.0.607](https://github.com/sprucelabsai-community/spruce-error/compare/v6.0.606...v6.0.607) (2025-06-06)
 
 ## [6.0.606](https://github.com/sprucelabsai-community/spruce-error/compare/v6.0.605...v6.0.606) (2025-06-01)
