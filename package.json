@@ -62,9 +62,9 @@
     "watch.tsc": "tsc -w"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "^7.0.9",
+    "@sprucelabs/esm-postbuild": "^7.0.10",
     "@sprucelabs/semantic-release": "^5.0.2",
-    "@sprucelabs/test": "^10.0.7",
+    "@sprucelabs/test": "^10.0.8",
     "chokidar-cli": "^3.0.0",
     "eslint": "^9.30.0",
     "eslint-config-spruce": "^11.2.26",
