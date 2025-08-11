@@ -1,3 +1,10 @@
+# [7.1.0](https://github.com/sprucelabsai-community/spruce-error/compare/v7.0.33...v7.1.0) (2025-08-11)
+
+
+### Features
+
+* can override error friendly messages in the env ([e7b25a9](https://github.com/sprucelabsai-community/spruce-error/commit/e7b25a9))
+
 ## [7.0.33](https://github.com/sprucelabsai-community/spruce-error/compare/v7.0.32...v7.0.33) (2025-08-09)
 
 ## [7.0.32](https://github.com/sprucelabsai-community/spruce-error/compare/v7.0.31...v7.0.32) (2025-08-09)
