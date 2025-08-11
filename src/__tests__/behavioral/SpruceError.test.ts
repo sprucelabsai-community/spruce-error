@@ -4,6 +4,10 @@ import AbstractSpruceError from '../../AbstractSpruceError'
 class SpruceError extends AbstractSpruceError {}
 
 export default class SpruceErrorTests {
+    protected async beforeEach() {
+        delete process.env.FRIENDLY_ERROR_MESSAGE_UNKNOWN_ERROR
+    }
+
     @test()
     public createError() {
         const error = new SpruceError({
@@ -69,7 +73,7 @@ export default class SpruceErrorTests {
 
     @test('stack includes options 1', { test: 'true' })
     @test('stack includes options 2', { cheesey: 'crunch' })
-    protected static async stackIncludesOptions(options: any) {
+    protected async stackIncludesOptions(options: any) {
         const error = new SpruceError({
             code: 'UNKNOWN_ERROR',
             ...options,
@@ -79,7 +83,7 @@ export default class SpruceErrorTests {
     }
 
     @test()
-    protected static async stackDoesNotIncludeOriginalError() {
+    protected async stackDoesNotIncludeOriginalError() {
         const error = new SpruceError({
             code: 'UNKNOWN_ERROR',
             //@ts-ignore
@@ -87,5 +91,47 @@ export default class SpruceErrorTests {
         })
 
         assert.doesNotInclude(error.stack, 'taco')
+    }
+
+    @test()
+    protected async canOverrideFriendlyErrorUsingEnv() {
+        process.env.FRIENDLY_ERROR_MESSAGE_UNKNOWN_ERROR =
+            'Custom friendly error message'
+        const error = new SpruceError({
+            code: 'UNKNOWN_ERROR',
+            friendlyMessage: 'Taco bravo',
+        })
+
+        assert.isEqual(error.friendlyMessage(), 'Custom friendly error message')
+    }
+
+    @test()
+    protected async doesNotOverrideIfEnvDoesNotMatchCode() {
+        process.env.FRIENDLY_ERROR_MESSAGE_UNKNOWN_ERROR =
+            'Custom friendly error message'
+
+        const error = new SpruceError({
+            code: 'MISSING_PARAMETERS',
+            friendlyMessage: 'This should not match',
+            parameters: [],
+        })
+
+        assert.isEqual(error.friendlyMessage(), 'This should not match')
+    }
+
+    @test()
+    protected async canOverrideDifferentCode() {
+        process.env.FRIENDLY_ERROR_MESSAGE_MISSING_PARAMETERS =
+            'Another custom friendly error message'
+        const error = new SpruceError({
+            code: 'MISSING_PARAMETERS',
+            friendlyMessage: 'a random error message',
+            parameters: [],
+        })
+
+        assert.isEqual(
+            error.friendlyMessage(),
+            'Another custom friendly error message'
+        )
     }
 }

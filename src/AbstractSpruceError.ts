@@ -14,6 +14,12 @@ export default abstract class AbstractSpruceError<
 
         super(code)
         this.options = options
+        const env =
+            typeof process !== 'undefined' && process.env ? process.env : {}
+        const key = `FRIENDLY_ERROR_MESSAGE_${code}`
+        this.options.friendlyMessage = env[key]
+            ? env[key]
+            : this.options.friendlyMessage
 
         if (options.originalError) {
             if (options.originalError instanceof Error) {
@@ -37,6 +43,7 @@ export default abstract class AbstractSpruceError<
 
         this.message = this.friendlyMessage()
         const optionsWithoutCode = { ...options }
+
         //@ts-ignore
         delete optionsWithoutCode.code
         delete optionsWithoutCode.originalError
