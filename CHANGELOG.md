@@ -1,3 +1,8 @@
+## <small>7.1.41 (2025-11-08)</small>
+
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([d34b7ec](https://github.com/sprucelabsai-community/spruce-error/commit/d34b7ec))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([2625e0f](https://github.com/sprucelabsai-community/spruce-error/commit/2625e0f))
+
 ## [7.1.40](https://github.com/sprucelabsai-community/spruce-error/compare/v7.1.39...v7.1.40) (2025-11-08)
 
 ## [7.1.39](https://github.com/sprucelabsai-community/spruce-error/compare/v7.1.38...v7.1.39) (2025-10-28)
