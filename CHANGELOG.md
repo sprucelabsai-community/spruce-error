@@ -1,3 +1,7 @@
+## 8.1.0 (2026-01-07)
+
+* feat: add exports field for proper ESM support in Node.js ([381a966](https://github.com/sprucelabsai-community/spruce-error/commit/381a966))
+
 ## <small>8.0.14 (2025-12-27)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([a093353](https://github.com/sprucelabsai-community/spruce-error/commit/a093353))
