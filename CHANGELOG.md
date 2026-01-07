@@ -1,3 +1,7 @@
+## <small>8.1.2 (2026-01-07)</small>
+
+* patch: upgrade dependencies ([db73ff2](https://github.com/sprucelabsai-community/spruce-error/commit/db73ff2))
+
 ## <small>8.1.1 (2026-01-07)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([4b68ed7](https://github.com/sprucelabsai-community/spruce-error/commit/4b68ed7))
