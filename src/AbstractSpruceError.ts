@@ -130,7 +130,7 @@ export default abstract class AbstractSpruceError<
             err.stack = stack
 
             return err
-        } catch (err) {
+        } catch {
             const stringified =
                 typeof json === 'string' ? json : JSON.stringify(json)
             // @ts-ignore
