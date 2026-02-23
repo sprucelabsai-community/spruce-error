@@ -1,3 +1,8 @@
+## <small>8.1.11 (2026-02-23)</small>
+
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([caf6d8d](https://github.com/sprucelabsai-community/spruce-error/commit/caf6d8d))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([bd0f9f5](https://github.com/sprucelabsai-community/spruce-error/commit/bd0f9f5))
+
 ## <small>8.1.10 (2026-02-20)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([96b5e93](https://github.com/sprucelabsai-community/spruce-error/commit/96b5e93))
