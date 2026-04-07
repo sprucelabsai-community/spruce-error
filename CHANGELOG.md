@@ -1,3 +1,7 @@
+## <small>8.1.16 (2026-04-07)</small>
+
+* Upgrade dependencies and fix TypeScript 6.0 tsconfig deprecations ([4b6ebd7](https://github.com/sprucelabsai-community/spruce-error/commit/4b6ebd7))
+
 ## <small>8.1.15 (2026-03-13)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([2834614](https://github.com/sprucelabsai-community/spruce-error/commit/2834614))
